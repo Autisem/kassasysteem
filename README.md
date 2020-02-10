@@ -1,5 +1,5 @@
 Onderdelen:
--	Account creatie
+Account creatie
    *	Data moet opgeslagen worden in een sql database
    * de data moet opgeslagen worden met gebruik van http://www.omdbapi.com/
    *	er moet een mail en wachtwoord opgeslagen worden voor het profiel
@@ -7,39 +7,39 @@ Onderdelen:
    *	\Er moet een lijst komen voor alle reserveringen van de klant
    *	?Er moet een bevestiging mail komen dat er een account is aangemaakt
 
--	Login
+Login
    *	Kijken of het email en wachtwoord overeenkomen met het account in de database
    *	?Er moet een mail verstuurd worden dat er is ingelogd
    *	De klant kan nu tickets bestellen (kan naar deze pagina’s gaan)
 
--	|Films toevoegen (alle films draaien op vaste tijden)
+|Films toevoegen (alle films draaien op vaste tijden)
    *	Films moeten makkelijk toegevoegd kunnen worden aan een tijdsslot (aanvinken van beschikbare tijdssloten en door middel van knop doorvoeren)
    *	Er moeten tijdssloten beschikbaar zijn voor films die over 2 weken draaien
    *	\Per tijdsslot een lijst met barcodes van iedereen die komt aanmaken
 
--	Film weergeven
+Film weergeven
    *	Er moet een titel, beschrijving en genre te zien zijn
    *	De tijdssloten waarop de film draait moeten te zien zijn
 
--	Reserveringen weergeven
+Reserveringen weergeven
    *	De klant moet alle aankomende films waarvoor hij of zij een reservering heeft gemaakt kunnen zien op een scherm (datum, tijd en stoel)
 
--	/Stoelen weergeven
+/Stoelen weergeven
    * De beschikbare stoelen moeten te zien en te selecteren zijn (visueel)
    *	De stoelen die al gereserveerd zijn moeten niet te selecteren zijn (\andere kleur geven)
    *	De stoelen die de klant heeft geselecteerd moeten voor 4 minuten als gereserveerd weergegeven worden om een dubbele boeking te voorkomen
 
--	/Bestellen tickets
+/Bestellen tickets
    *	De klant betaald met paypal
    *	De klant krijgt een mail met daarin een barcode die gescand kan worden tijdens zijn of haar bezoek (mogelijk ook andere informatie zoals titel film, tijd en datum)
    *	De stoelen worden definitief als gereserveerd gemarkeerd
    *	De reservering/barcode word toegevoegd aan de film en gekoppeld aan de stoel(en)
 
--	|Scannen tickets
+|Scannen tickets
    * De barcode moet gescand kunnen worden en zo moet het bezoek bevestigd worden.
    * Indien de barcode al eerder is gescand word dit als een duidelijke foutmelding weergegeven
 
--	|Op locatie tickets kopen (kan mogelijk op dezelfde manier als dat je het zelf doet maar dan word het betaalverzoek verstuurd naar een terminal/betaal apparaat)
+|Op locatie tickets kopen (kan mogelijk op dezelfde manier als dat je het zelf doet maar dan word het betaalverzoek verstuurd naar een terminal/betaal apparaat)
    *	Een klant kan op locatie tickets kopen aan een desk
 
 
