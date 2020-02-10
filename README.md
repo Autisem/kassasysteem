@@ -1,3 +1,62 @@
+Onderdelen:
+-	Account creatie
+o	Data moet opgeslagen worden in een sql database
+o	de data moet opgeslagen worden met gebruik van http://www.omdbapi.com/
+o	er moet een mail en wachtwoord opgeslagen worden voor het profiel
+o	er moet aangegeven worden of de gebruiker een klant of personeel is
+o	\Er moet een lijst komen voor alle reserveringen van de klant
+o	?Er moet een bevestiging mail komen dat er een account is aangemaakt
+
+-	Login
+o	Kijken of het email en wachtwoord overeenkomen met het account in de database
+o	?Er moet een mail verstuurd worden dat er is ingelogd
+o	De klant kan nu tickets bestellen (kan naar deze pagina’s gaan)
+
+-	|Films toevoegen (alle films draaien op vaste tijden)
+o	Films moeten makkelijk toegevoegd kunnen worden aan een tijdsslot (aanvinken van beschikbare tijdssloten en door middel van knop doorvoeren)
+o	Er moeten tijdssloten beschikbaar zijn voor films die over 2 weken draaien
+o	\Per tijdsslot een lijst met barcodes van iedereen die komt aanmaken
+
+-	Film weergeven
+o	Er moet een titel, beschrijving en genre te zien zijn
+o	De tijdssloten waarop de film draait moeten te zien zijn
+
+-	Reserveringen weergeven
+o	De klant moet alle aankomende films waarvoor hij of zij een reservering heeft gemaakt kunnen zien op een scherm (datum, tijd en stoel)
+
+-	/Stoelen weergeven
+o	De beschikbare stoelen moeten te zien en te selecteren zijn (visueel)
+o	De stoelen die al gereserveerd zijn moeten niet te selecteren zijn (\andere kleur geven)
+o	De stoelen die de klant heeft geselecteerd moeten voor 4 minuten als gereserveerd weergegeven worden om een dubbele boeking te voorkomen
+
+-	/Bestellen tickets
+o	De klant betaald met paypal
+o	De klant krijgt een mail met daarin een barcode die gescand kan worden tijdens zijn of haar bezoek (mogelijk ook andere informatie zoals titel film, tijd en datum)
+o	De stoelen worden definitief als gereserveerd gemarkeerd
+o	De reservering/barcode word toegevoegd aan de film en gekoppeld aan de stoel(en)
+
+-	|Scannen tickets
+o	De barcode moet gescand kunnen worden en zo moet het bezoek bevestigd worden.
+o	Indien de barcode al eerder is gescand word dit als een duidelijke foutmelding weergegeven
+
+-	|Op locatie tickets kopen (kan mogelijk op dezelfde manier als dat je het zelf doet maar dan word het betaalverzoek verstuurd naar een terminal/betaal apparaat)
+o	Een klant kan op locatie tickets kopen aan een desk
+
+
+? = niet zeker of dat dit moet
+\ = Mogelijk is dit handig, maar dit kan ook anders.
+| = dit krijg je alleen te zien als je personeel bent
+/ = hiervoor moet je ingelogd zijn
+
+
+
+
+
+
+
+===============================
+============= Old =============
+===============================
 Vereisten:
 -	Voldoet aan normalisatie regels en word ontworpen doormiddel van de ERD techniek
 -	Gebruik van SQL database
