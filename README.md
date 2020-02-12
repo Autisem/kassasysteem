@@ -25,11 +25,11 @@ Beschikbare stoelen opslaan:
 Elke stoel heeft zijn eigen nummer, je begint met tellen vanaf 1 (stoel 1), en gaat zo door tot het aatal stoel in de zaal.
 De stoelen worden vervolgens in een duidelijke gui geplaatst door middel van html en css zodat het uit te lezen is.
 
-[Landing page/home page] - > [register].
-[Landing page/home page] -> [login].
-[Films pagina] -> [info film] && [login].
-[info film] -> [!plaatsen reservering].
-[!plaatsen reserveringen] -> [afrond pagina/bestelling succes pagina].
+- [Landing page/home page] - > [register]
+- [Landing page/home page] -> [login]
+- [Films pagina] -> [info film] && [login]
+- [info film] -> [!plaatsen reservering]
+- [!plaatsen reserveringen] -> [afrond pagina/bestelling succes pagina]
 
 
 opbouw/uitleg structuur:
