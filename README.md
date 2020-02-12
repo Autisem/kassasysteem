@@ -24,6 +24,8 @@ Als de betaling afgerond word:
 * Reserverings id aanmaken (deze staat gelijk aan de barcode)
 * De reservering in de definitieve database zetten
 
+
+
 - [Landing page/home page] - > [register]
 - [Landing page/home page] -> [login]
 - [Films pagina] -> [info film] && [login]
