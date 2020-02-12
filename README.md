@@ -26,6 +26,7 @@ Als de betaling afgerond word:
 
 
 
+Flowchart:
 - [Landing page/home page] - > [register]
 - [Landing page/home page] -> [login]
 - [Films pagina] -> [info film] && [login]
@@ -33,7 +34,8 @@ Als de betaling afgerond word:
 - [!plaatsen reserveringen] -> [afrond pagina/bestelling succes pagina]
 
 
-- opbouw/uitleg structuur:
+
+opbouw/uitleg structuur:
 - Tussen [] en {} staat een korte omschrijving van de web pagina's
 - Een -> betekend dat je via die pagina door kan klikken naar de volgende pagina('s).
 - && betekend dat je ook door kan klikken naar
