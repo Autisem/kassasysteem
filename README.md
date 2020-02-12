@@ -1,6 +1,12 @@
 
 Notes standup Week1 dag2:
 
+- UID = Unique ID, een id die de gebruiker representeerd
+
+- Beschikbare stoelen opslaan:
+Elke stoel heeft zijn eigen nummer, je begint met tellen vanaf 1 (stoel 1), en gaat zo door tot het aatal stoel in de zaal.
+De stoelen worden vervolgens in een duidelijke gui geplaatst door middel van html en css zodat het uit te lezen is.
+
 [Register] systeem:
 * Email
 * voornaam, (tussenvoegsel) achternaam
@@ -18,13 +24,6 @@ Als de betaling afgerond word:
 * Reserverings id aanmaken (deze staat gelijk aan de barcode)
 * De reservering in de definitieve database zetten
 
-
-UID = Unique ID, een id die de gebruiker representeerd
-
-Beschikbare stoelen opslaan:
-Elke stoel heeft zijn eigen nummer, je begint met tellen vanaf 1 (stoel 1), en gaat zo door tot het aatal stoel in de zaal.
-De stoelen worden vervolgens in een duidelijke gui geplaatst door middel van html en css zodat het uit te lezen is.
-
 - [Landing page/home page] - > [register]
 - [Landing page/home page] -> [login]
 - [Films pagina] -> [info film] && [login]
@@ -32,11 +31,11 @@ De stoelen worden vervolgens in een duidelijke gui geplaatst door middel van htm
 - [!plaatsen reserveringen] -> [afrond pagina/bestelling succes pagina]
 
 
-opbouw/uitleg structuur:
-Tussen [] en {} staat een korte omschrijving van de web pagina's
-Een -> betekend dat je via die pagina door kan klikken naar de volgende pagina('s).
-&& betekend dat je ook door kan klikken naar
-! in de omschrijving betekend dat je ingelogd moet zijn om door te kunnen klikken.
+- opbouw/uitleg structuur:
+- Tussen [] en {} staat een korte omschrijving van de web pagina's
+- Een -> betekend dat je via die pagina door kan klikken naar de volgende pagina('s).
+- && betekend dat je ook door kan klikken naar
+- ! in de omschrijving betekend dat je ingelogd moet zijn om door te kunnen klikken.
 
 
 
