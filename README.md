@@ -1,5 +1,55 @@
+<<<<<<< HEAD
 # kassasysteem
 
+=======
+
+Notes standup Week1 dag2:
+
+- UID = Unique ID, een id die de gebruiker representeerd
+
+- Beschikbare stoelen opslaan:
+Elke stoel heeft zijn eigen nummer, je begint met tellen vanaf 1 (stoel 1), en gaat zo door tot het aatal stoel in de zaal.
+De stoelen worden vervolgens in een duidelijke gui geplaatst door middel van html en css zodat het uit te lezen is.
+
+[Register] systeem:
+* Email
+* voornaam, (tussenvoegsel) achternaam
+* geslacht
+
+[login] syteem:
+* Email + Wachtwoord
+Checken met database en als het correct is:
+* UID ophalen (gebruikers id/account id)
+* rank ophalen
+
+[Plaatsen reservering]:
+* UID, Zaal, tijd, stoel in tijdelijke database zetten als reservering
+Als de betaling afgerond word:
+* Reserverings id aanmaken (deze staat gelijk aan de barcode)
+* De reservering in de definitieve database zetten
+
+
+
+Flowchart:
+- [Landing page/home page] - > [register]
+- [Landing page/home page] -> [login]
+- [Films pagina] -> [info film] && [login]
+- [info film] -> [!plaatsen reservering]
+- [!plaatsen reserveringen] -> [afrond pagina/bestelling succes pagina]
+
+
+
+opbouw/uitleg structuur:
+- Tussen [] en {} staat een korte omschrijving van de web pagina's
+- Een -> betekend dat je via die pagina door kan klikken naar de volgende pagina('s).
+- && betekend dat je ook door kan klikken naar
+- ! in de omschrijving betekend dat je ingelogd moet zijn om door te kunnen klikken.
+
+
+
+
+==============================
+>>>>>>> f7ea1bbf942831ecb2871d4166e965672d5d8c28
 Onderdelen:
 Account creatie
    *	Data moet opgeslagen worden in een sql database
@@ -52,6 +102,7 @@ Reserveringen weergeven
 | = dit krijg je alleen te zien als je personeel bent
 
 / = hiervoor moet je ingelogd zijn
+<<<<<<< HEAD
 
 
 
@@ -94,3 +145,5 @@ Visual gedeelte:
 Backend gedeelte:
 -	Tijdens het reserveren moeten de geselecteerde stoelen voor 4 minuten voor de persoon die de reservering probeert te plaatsen gereserveerd zijn. Deze kunnen gedurende die 4 minuten dus niet door anderen gereserveerd worden.
 -	Data mag niet persoonlijk worden opgeslagen in een database, hiervoor moet gebruik gemaakt worden van http://www.omdbapi.com/
+=======
+>>>>>>> f7ea1bbf942831ecb2871d4166e965672d5d8c28
