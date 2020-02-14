@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 # kassasysteem
 
-=======
 
 Notes standup Week1 dag2:
 
@@ -48,8 +46,6 @@ opbouw/uitleg structuur:
 
 
 
-==============================
->>>>>>> f7ea1bbf942831ecb2871d4166e965672d5d8c28
 Onderdelen:
 Account creatie
    *	Data moet opgeslagen worden in een sql database
@@ -102,15 +98,7 @@ Reserveringen weergeven
 | = dit krijg je alleen te zien als je personeel bent
 
 / = hiervoor moet je ingelogd zijn
-<<<<<<< HEAD
 
-
-
-
-
-
-
-============= Old =============
 Vereisten:
 -	Voldoet aan normalisatie regels en word ontworpen doormiddel van de ERD techniek
 -	Gebruik van SQL database
@@ -145,5 +133,3 @@ Visual gedeelte:
 Backend gedeelte:
 -	Tijdens het reserveren moeten de geselecteerde stoelen voor 4 minuten voor de persoon die de reservering probeert te plaatsen gereserveerd zijn. Deze kunnen gedurende die 4 minuten dus niet door anderen gereserveerd worden.
 -	Data mag niet persoonlijk worden opgeslagen in een database, hiervoor moet gebruik gemaakt worden van http://www.omdbapi.com/
-=======
->>>>>>> f7ea1bbf942831ecb2871d4166e965672d5d8c28
