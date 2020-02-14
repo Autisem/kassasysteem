@@ -12,4 +12,18 @@ $emailh= $_POST["email-two-input"];
 $wachtwoord = $_POST["wachtwoord-input"];
 $wachtwoordh = $_POST["wachtwoord-two-input"];
 
+
+if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+  if (filter_var($emailh, FILTER_VALIDATE_EMAIL)) {
+    if ($email == $emailh) {
+      
+    }
+  }
+  else {
+
+  }
+}
+else {
+
+}
  ?>
