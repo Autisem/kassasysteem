@@ -97,7 +97,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
- /*  --===============================--
+/*  --===============================--
    GLOBAL
 -=================================- */
 * {
@@ -110,7 +110,7 @@ body {
 }
 
 input {
-  outline: none;
+	outline: none;
 }
 
 h1,
@@ -130,56 +130,142 @@ p,
 a {
 	font-family: 'PT Sans', sans-serif;
 	outline: none;
-  text-decoration: none;
+	text-decoration: none;
 }
 
 i {
-  color: white;
-  font-size: 1.5rem;
+	color: white;
+	font-size: 1.5rem;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 60%;
 }
 
 /*  --===============================--
   HEADER
 -=================================- */
 .brand {
-  margin: 0 20px;
+	margin: 0 20px;
 }
 header {
-  background: #CC0000;
-  font-size: 1.3rem;
-  font-family: oswald;
-  color: white;
-  box-shadow: 0px 2px 10px 0px rgba(94, 94, 94, 0.75);
+	background: #cc0000;
+	font-size: 1.3rem;
+	font-family: oswald;
+	color: white;
+	box-shadow: 0px 2px 10px 0px rgba(94, 94, 94, 0.75);
 }
 header nav {
-  display: flex;
-  justify-content: space-between;
-  width: 300px;
+	display: flex;
+	justify-content: space-between;
+	width: 300px;
 }
-header input[type=text]{
-  padding: 8px;
-  width: 160px;
-  margin: 0 10px;
-  border-radius: 10px;
-  border: 1px solid white;
+header input[type=text] {
+	padding: 8px;
+	width: 160px;
+	margin: 0 10px;
+	border-radius: 10px;
+	border: 1px solid white;
 }
 
+/*  --===============================--
+  MAIN
+-=================================- */
+
+#hero_movies {
+	background-color: rgb(32, 32, 32);
+	padding: 50px 0;
+}
+
+#hero_movies img {
+	margin: 0 20px;
+}
+
+.row {
+	margin-left: -35px;
+	margin-right: 0px;
+}
+
+.carousel-inner {
+	width: 100%;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+	background-image: none;
+}
+
+.img-responsive {
+	width: 100%;
+	height: auto;
+}
+
+@media (min-width: 992px) {
+	.carousel-inner .active.left {
+		left: -25%;
+	}
+	.carousel-inner .next {
+		left: 25%;
+	}
+	.carousel-inner .prev {
+		left: -25%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.carousel-inner .active.left {
+		left: -33.3%;
+	}
+	.carousel-inner .next {
+		left: 33.3%;
+	}
+	.carousel-inner .prev {
+		left: -33.3%;
+	}
+	.active > div:first-child {
+		display: block;
+	}
+	.active > div:first-child + div {
+		display: block;
+	}
+	.active > div:last-child {
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	.carousel-inner .active.left {
+		left: -100%;
+	}
+	.carousel-inner .next {
+		left: 100%;
+	}
+	.carousel-inner .prev {
+		left: -100%;
+	}
+	.active > div {
+		display: none;
+	}
+	.active > div:first-child {
+		display: block;
+	}
+}
 /*  --===============================--
   FOOTER
 -=================================- */
 footer {
-  background: #CC0000;
-  padding: 10px;
-  color: white;
+	background: #cc0000;
+	padding: 10px;
+	color: white;
 }
 .social-media {
-  margin: 0 10px;
-  width: 100px;
+	margin: 0 10px;
+	width: 100px;
 }
 .links {
-  width: 400px;
+	width: 400px;
 }
-
 
 /* ==========================================================================
    Helper classes
@@ -189,10 +275,10 @@ footer {
  * Hide visually and from screen readers
  */
 .flex {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
- }
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 
 .hidden {
 	display: none !important;
