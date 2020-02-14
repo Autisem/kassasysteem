@@ -1,19 +1,12 @@
 <?php
-require '../vendor/autoload.php';
+require 'vendor/autoload.php';
 
-
-echo '<form method="post" action=""><input type="text" name="code">
-      <input type="submit">
-      </form>';
-
-echo GetBar($_POST['code']);
-
+//Geef GetBar met een nummer mee om dit naar barcode over te zetten
 function GetBar($code){
 $generator = new Picqer\Barcode\BarcodeGeneratorHTML();
 if(isset($code)){
 return $generator->getBarcode($code, $generator::TYPE_CODE_128);
 }
 }
-
 
 ?>
