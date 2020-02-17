@@ -4,27 +4,27 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInite35bd7b51473b11f74902a73a959adf5
+class ComposerStaticInitc125ac17279ccd5b14234b2ae1eb2c87
 {
     public static $prefixLengthsPsr4 = array (
         'P' => 
         array (
-            'Picqer\\Barcode\\' => 15,
+            'PHPMailer\\PHPMailer\\' => 20,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Picqer\\Barcode\\' => 
+        'PHPMailer\\PHPMailer\\' => 
         array (
-            0 => __DIR__ . '/..' . '/picqer/php-barcode-generator/src',
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInite35bd7b51473b11f74902a73a959adf5::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInite35bd7b51473b11f74902a73a959adf5::$prefixDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitc125ac17279ccd5b14234b2ae1eb2c87::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitc125ac17279ccd5b14234b2ae1eb2c87::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }
