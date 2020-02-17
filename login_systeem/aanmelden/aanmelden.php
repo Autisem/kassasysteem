@@ -13,23 +13,8 @@ $wachtwoord = $_POST["wachtwoord-input"];
 $wachtwoordh = $_POST["wachtwoord-two-input"];
 
 
-if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-  if (filter_var($emailh, FILTER_VALIDATE_EMAIL)) {
-    if ($email == $emailh) {
-      if ($wachtwoord == $wachtwoordh) {
-        // code...
-      }
-      else {
-        // code...
-      }
-    }
-    else {
-      // code...
-    }
-  }
-  else {
-    // code...
-  }
+if (filter_var($email, FILTER_VALIDATE_EMAIL) && filter_var($emailh, FILTER_VALIDATE_EMAIL) && $email == $emailh && $wachtwoord == $wachtwoordh) {
+  INSERT INTO 
 }
 else {
   // code...
