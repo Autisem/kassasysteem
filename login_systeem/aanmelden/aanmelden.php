@@ -6,15 +6,50 @@ $woonplaats = $_POST["woonplaats-input"];
 $straatnaam = $_POST["straatnaam-input"];
 $huisnummer = $_POST["huisnummer-input"];
 $postcode = $_POST["postcode-input"];
-$tefoonnummer = $_POST["telefoonnummer-input"];
+$telefoonnummer = $_POST["telefoonnummer-input"];
 $email = $_POST["email-input"];
-$emailh= $_POST["email-two-input"];
+$emailh = $_POST["email-two-input"];
 $wachtwoord = $_POST["wachtwoord-input"];
 $wachtwoordh = $_POST["wachtwoord-two-input"];
 
 
-if (filter_var($email, FILTER_VALIDATE_EMAIL) && filter_var($emailh, FILTER_VALIDATE_EMAIL) && $email == $emailh && $wachtwoord == $wachtwoordh) {
-  INSERT INTO 
+if (filter_var($email, FILTER_VALIDATE_EMAIL) && filter_var($emailh, FILTER_VALIDATE_EMAIL)) {
+  if ($email == $emailh) {
+    if ($wachtwoord == $wachtwoordh) {
+      INSERT INTO gegevens
+      (
+          voornaam,
+          achternaam,
+          geboortedatum,
+          woonplaats,
+          straatnaam,
+          huisnummer,
+          postcode,
+          telefoonnummer,
+          email,
+          wachtwoord
+      )
+      VALUES
+      (
+          $voornaam,
+          $achternaam,
+          $geboortedatum,
+          $woonplaats,
+          $straatnaam,
+          $huisnummer,
+          $postcode,
+          $telefoonnummer,
+          $email,
+          $wachtwoord
+      )
+    }
+    else {
+      // code...
+    }
+  }
+  else {
+    // code...
+  }
 }
 else {
   // code...
