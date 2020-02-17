@@ -109,16 +109,13 @@ body {
 	line-height: 1.1;
 }
 
-input {
-	outline: none;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+	color: white;
 	font-family: 'Oswald', sans-serif;
 }
 
@@ -129,7 +126,6 @@ a {
 p,
 a {
 	font-family: 'PT Sans', sans-serif;
-	outline: none;
 	text-decoration: none;
 }
 
@@ -140,7 +136,25 @@ i {
 
 .wrapper {
 	margin: 0 auto;
-	width: 60%;
+	width: 67%;
+}
+
+.herotitle {
+	text-align: center;
+	display: block;
+	font-size: 3.5em;
+	margin-bottom: 50px;
+}
+
+.subtitle {
+	text-align: left;
+	display: block;
+	font-size: 2.5em;
+	margin-bottom: 50px;
+}
+
+.sectionspacing {
+	padding: 50px 0;
 }
 
 /*  --===============================--
@@ -153,7 +167,6 @@ header {
 	background: #cc0000;
 	font-size: 1.3rem;
 	font-family: oswald;
-	color: white;
 	box-shadow: 0px 2px 10px 0px rgba(94, 94, 94, 0.75);
 }
 header nav {
@@ -161,7 +174,7 @@ header nav {
 	justify-content: space-between;
 	width: 300px;
 }
-header input[type=text] {
+header input {
 	padding: 8px;
 	width: 160px;
 	margin: 0 10px;
@@ -175,11 +188,6 @@ header input[type=text] {
 
 #hero_movies {
 	background-color: rgb(32, 32, 32);
-	padding: 50px 0;
-}
-
-#hero_movies img {
-	margin: 0 20px;
 }
 
 .row {
@@ -251,6 +259,24 @@ header input[type=text] {
 		display: block;
 	}
 }
+
+#nu {
+	background-color: currentColor;
+}
+
+#nu img {
+	max-width: 360px;
+	width: 100%;
+	height: auto;
+}
+
+.nugrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	column-gap: 1%;
+	row-gap: 5%;
+}
+
 /*  --===============================--
   FOOTER
 -=================================- */
@@ -274,10 +300,20 @@ footer {
 /*
  * Hide visually and from screen readers
  */
+
 .flex {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.flexX {
+	flex-direction: column;
+}
+
+.flexcent {
+	display: flex;
+	justify-content: center;
 }
 
 .hidden {

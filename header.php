@@ -29,14 +29,15 @@
         <h1>Bioscoop AMO</h1>
       </div>
       <nav>
-        <a href="">Films</a>
-        <a href="">Nu</a>
-        <a href="">Binnenkort</a>
-        <a href="">Kids</a>
+        <a href="#hero_movies">Populair</a>
+        <a href="#nu">Nu</a>
+        <a href="#binnenkort">Binnenkort</a>
+        <a href="#kids">Kids</a>
       </nav>
-      <form action="">
+      <form action="" method="POST">
         <a href="#">Account</a>
-        <input type="text" placeholder="search">
+        <input type="text" name="" placeholder="Gebruikersnaam">
+        <input type="password" name="" placeholder="Wachtwoord">
       </form>
     </div>
   </header>

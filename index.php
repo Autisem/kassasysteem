@@ -1,8 +1,11 @@
 <?php require('header.php'); ?>
 
 <main>
-  <section id="hero_movies">
+  <section id="hero_movies" class="sectionspacing">
     <div>
+      <h2 class="herotitle">
+        Populair
+      </h2>
       <!-- 
       <a href="#"><img src="https://media.pathe.nl/thumb/360x508/gfx_content/other/api/filmdepot/v1/movie/download/33234_121015_ps_sd-high.jpg"></a>
       <a href="#"><img src="https://media.pathe.nl/sticker/kids/gfx_content/other/api/filmdepot/v1/movie/download/32957_119635_ps_sd-high.jpg"></a>
@@ -52,15 +55,67 @@
         </div>
       </div>
   </section>
-  <section id="nu">
+  <section id="nu" class="sectionspacing">
+    <div class="wrapper">
+      <div class="nugrid">
+        <div>
+          <a href="">
+            <img src="https://media.pathe.nl/thumb/360x508/gfx_content/other/api/filmdepot/v1/movie/download/33234_121015_ps_sd-high.jpg" alt="movie">
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img src="https://media.pathe.nl/thumb/360x508/gfx_content/other/api/filmdepot/v1/movie/download/33234_121015_ps_sd-high.jpg" alt="movie">
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img src="https://media.pathe.nl/thumb/360x508/gfx_content/other/api/filmdepot/v1/movie/download/33234_121015_ps_sd-high.jpg" alt="movie">
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img src="https://media.pathe.nl/thumb/360x508/gfx_content/other/api/filmdepot/v1/movie/download/33234_121015_ps_sd-high.jpg" alt="movie">
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img src="https://media.pathe.nl/thumb/360x508/gfx_content/other/api/filmdepot/v1/movie/download/33234_121015_ps_sd-high.jpg" alt="movie">
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img src="https://media.pathe.nl/thumb/360x508/gfx_content/other/api/filmdepot/v1/movie/download/33234_121015_ps_sd-high.jpg" alt="movie">
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img src="https://media.pathe.nl/thumb/360x508/gfx_content/other/api/filmdepot/v1/movie/download/33234_121015_ps_sd-high.jpg" alt="movie">
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img src="https://media.pathe.nl/thumb/360x508/gfx_content/other/api/filmdepot/v1/movie/download/33234_121015_ps_sd-high.jpg" alt="movie">
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img src="https://media.pathe.nl/thumb/360x508/gfx_content/other/api/filmdepot/v1/movie/download/33234_121015_ps_sd-high.jpg" alt="movie">
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img src="https://media.pathe.nl/thumb/360x508/gfx_content/other/api/filmdepot/v1/movie/download/33234_121015_ps_sd-high.jpg" alt="movie">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="Binnenkort" class="sectionspacing">
     <div class="wrapper">
     </div>
   </section>
-  <section id="Binnenkort">
-    <div class="wrapper">
-    </div>
-  </section>
-  <section id="Kids">
+  <section id="Kids" class="sectionspacing">
     <div class="wrapper">
     </div>
   </section>
