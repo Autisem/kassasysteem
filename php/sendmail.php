@@ -27,7 +27,7 @@ $mail = new PHPMailer(true);
 
         //Recipients
         $mail->setFrom('daanisaanwezigdev@gmail.com', 'Bioscoop AMO');
-        $mail->addAddress($mailAdress, $userName);       // Add a recipient
+        $mail->addAddress($mailAdress, $userName);                      // Add a recipient
         //$mail->addAddress('ellen@example.com');                       // Name is optional
         //$mail->addReplyTo('info@example.com', 'Information');
         //$mail->addCC('cc@example.com');
@@ -36,7 +36,7 @@ $mail = new PHPMailer(true);
         // Attachments
         if(isset($attachment))
         {
-            $mail->addAttachment('barcode.png');                        //add a attachment to the mail
+            $mail->addAttachment($attachment);                          //add a attachment to the mail
             //$mail->addAttachment('/var/tmp/file.tar.gz');             // Add attachments
         //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');            // Optional name
         }
