@@ -35,7 +35,7 @@
         <a href="#kids">Kids</a>
       </nav>
       <form action="" method="POST">
-        <a href="#">Account</a>
+        <a href="loginpage.php">Account</a>
         <input type="text" name="" placeholder="Gebruikersnaam">
         <input type="password" name="" placeholder="Wachtwoord">
       </form>
