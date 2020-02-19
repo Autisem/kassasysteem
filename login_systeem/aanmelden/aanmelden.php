@@ -12,25 +12,29 @@ $emailh = $_POST["email-two-input"];
 $wachtwoord = $_POST["wachtwoord-input"];
 $wachtwoordh = $_POST["wachtwoord-two-input"];
 
+$sql = "SELECT * FROM gegevens";
+$query = $db->query($sql);
+$items = $query->fetchAll(PDO::FETCH_ASSOC);
 
 if (filter_var($email, FILTER_VALIDATE_EMAIL) && filter_var($emailh, FILTER_VALIDATE_EMAIL)) {
   if ($email == $emailh) {
     if ($wachtwoord == $wachtwoordh) {
-      INSERT INTO gegevens
-      (
-          voornaam,
-          achternaam,
-          geboortedatum,
-          woonplaats,
-          straatnaam,
-          huisnummer,
-          postcode,
-          telefoonnummer,
-          email,
-          wachtwoord
-      )
-      VALUES
-      (
+    $sql = "
+        INSERT INTO gegevens
+        (
+            voornaam,
+            achternaam,
+            geboortedatum,
+            woonplaats,
+            straatnaam,
+            huisnummer,
+            postcode,
+            telefoonnummer,
+            email,
+            wachtwoord
+        )
+        VALUES
+        (
           $voornaam,
           $achternaam,
           $geboortedatum,
@@ -41,17 +45,18 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL) && filter_var($emailh, FILTER_VALI
           $telefoonnummer,
           $email,
           $wachtwoord
-      )
+          )
+      ";
     }
     else {
-      // code...
+      echo "Uw wachtwoord herhaaling kwam niet overeen";
     }
   }
   else {
-    // code...
+    echo "Uw email adres herhaaling kwam niet overeen";
   }
 }
 else {
-  // code...
+  echo "U hebt geen geldig email adres ingevoerd";
 }
  ?>
