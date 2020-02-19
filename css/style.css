@@ -1,0 +1,387 @@
+/*      -=========================-
+    GLOBAL
+-===========================-*/
+* {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 60%;
+}
+header a, footer a {
+    color: white;
+}
+a {
+    color: black;
+}
+span {
+    font-family: oswald;
+}
+input[type=submit] {
+    cursor: pointer;
+}
+
+/*  -=========================-
+    header
+-===========================-*/
+body {
+    background: white;
+    color: black;
+}
+
+/*  -=========================-
+    IMAGE
+-===========================-*/
+.backimage {
+    background: url("https://s2.dmcdn.net/v/RdnY_1TofmnpBbcjX/x1080");
+    position: absolute;
+    height: 70vh;
+    width: 100%;
+    background-position: center;
+    z-index: -1;
+    box-shadow: 0px 2px 10px 0px rgba(94, 94, 94, 0.75);
+}
+
+/*  -=========================-
+    TOP IMG AND LORE
+-===========================-*/
+.img-title img {
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.img-title {
+    display: flex;
+    align-items: center;
+}
+.img-title h2 {
+    font-size: 2.9rem;
+}
+.movie-title {
+    padding-top: 30vh;
+}
+.movie-title input[type=submit] {
+    width: 500px;
+    background: #FFC426;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 2rem;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 2px 10px 0px rgba(94, 94, 94, 0.75);
+}
+.movie-details {
+    border-radius: 6px;
+    background: #e0e1e4;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0px 2px 10px 0px rgba(94, 94, 94, 0.75);
+}
+.lore {
+    width: 600px;
+    padding: 10px 0;
+}
+
+/*  -=========================-
+    MOVIE TIMES AND TICKETS
+-===========================-*/
+.times {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+}
+.times h3 {
+    font-size: 1.6rem;
+    color: black;
+    letter-spacing: 2px;
+}
+.time {
+    width: 75%;
+    margin: 10px 0px;
+    background: #e0e1e4;
+    padding: 10px;
+    font-size: 1.4rem;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0px 2px 10px 0px rgba(94, 94, 94, 0.75);
+}
+.time .special-seat {
+    margin: 6px 0;
+    background: #FFC426;
+    text-align: center;
+    padding: 6px 0;
+    border-radius: 6px;
+    width: 100%;
+}
+
+/*  -=========================-
+    TRAILERS AND TICKETS
+-===========================-*/
+.trailers-photos {
+    color: black;
+    padding: 20px 0;
+}
+.trailers-photos h4{
+    margin: 12px 0;
+}
+.background-black {
+    position: absolute;
+    background: #e0e1e4;
+    height: 74vh;
+    width: 100%;
+    background-position: center;
+    z-index: -1;
+    box-shadow: 0px 2px 10px 0px rgba(94, 94, 94, 0.75);
+}
+.cast-crew {
+    display: flex;
+}
+.cast-crew span {
+    color: gray;
+}
+.trailers-photos h5,h4 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+.trailers-photos img {
+    margin-right: 12px;
+}
+
+
+/*  -=========================-
+    TICKETS PAGE
+-===========================-*/
+.background-top-title {
+    position: absolute;
+    background: #e0e1e4;
+    height: 16vh;
+    width: 100%;
+    background-position: center;
+    z-index: -1;
+    box-shadow: 0px 2px 10px 0px rgba(94, 94, 94, 0.75);
+}
+.title {
+    padding: 30px 0;
+    text-transform: uppercase;
+    color: #CC0009;
+}
+.go-back {
+    margin-top: 7vh;
+}
+
+/*  -=========================-
+    TABLE
+-===========================-*/
+.order {
+    font-family: 'PT Sans';
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.tickets {
+    width: 60%;
+}
+.order-confirmation {
+    width: 30%;
+}
+
+/*  -=========================-
+    PROGRESSBAR
+-===========================-*/
+.progress {
+    display: flex;
+}
+.progress .selected {
+    background: #FFC426;
+}
+.bar {
+    padding: 4px 6px;
+    background: #e0e1e4;
+    margin-right: 10px;
+    padding: 8px;
+    margin-bottom: 2vh;
+}
+
+/*  -=========================-
+    TABLE
+-===========================-*/
+table {
+    margin: 10px 0;
+    background: #e0e1e4;
+    width: 100%;
+}
+table thead tr td:nth-child(1), table tbody tr td:nth-child(1)  {
+    width: 400px;
+    padding: 6px;
+}
+table thead tr td:nth-child(2), table tbody tr td:nth-child(2)  {
+    width: 60px;
+}
+table thead tr td {
+    background: #CC0009;
+    color: white;
+    padding: 10px;
+}
+table input[type=number]{
+    width: 40px;
+}
+
+/*  -=========================-
+    VOUCHER
+-===========================-*/
+.voucher input[type=text]{
+    padding: 4px;
+    width: 400px;
+    margin: 20px 0;
+}
+.voucher .submit {
+    padding: 6px;
+    margin: 0px 6px;
+    width: 80px;
+    border: none;
+    background: #FFC426;
+}
+.go-to-next-stage input{
+    margin-top: 12vh;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    background: #FFC426;
+}
+
+/*  -=========================-
+    ORDER-CONFIRMATION
+-===========================-*/
+.order-movie-info {
+    border: 2px solid rgb(214, 214, 214);
+    text-align: left;
+    padding: 16px;
+    box-shadow: 0px 2px 10px 0px rgba(94, 94, 94, 0.75);
+}
+.order-movie-info .img {
+    margin: 0 auto;
+}
+.order-movie-info h5, .order-movie-info h4 {
+    margin-top: 8px;
+    color: rgba(65, 65, 65, 0.75);
+}
+.order-confirmation h3, .order-movie-info p {
+    margin: 10px 0;
+    color: rgba(119, 119, 119, 0.75);
+}
+.order-confirmation p {
+    margin: 16px 0;
+}
+.order-page img {
+    margin: 0 0;
+    float: left;
+    height: 30vh;
+    margin-bottom: 16vh;
+    margin-right: 2vw;
+    margin-top: 10px;
+}
+
+/*  -=========================-
+    CONFIRMATION PAGE
+-===========================-*/
+.order-page .order-movie-details {
+    height: 40vh;
+}
+.order-page {
+    font-size: 1.4rem;
+    height: 40vh;
+    position: relative;
+    margin-top: 1vh;
+}
+.total, .tickets-total{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1vh;
+    border-bottom: 1px solid #979797;
+    padding: 4px;
+}
+
+/*  -=========================-
+    LOGIN
+-===========================-*/
+.login-wrapper {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    font-family: 'PT Sans';
+}
+.login-wrapper input, .register-wrapper input {
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 6px;
+    padding: 6px;
+    width: 30%;
+    box-shadow: 0px 2px 10px 0px rgba(94, 94, 94, 0.50);
+}
+.register {
+    margin-bottom: 54vh;
+    padding: 10px;
+}
+.register a {
+    color: #CC0009;
+    text-decoration: underline;
+}
+
+/*  -=========================-
+    REGISTER
+-===========================-*/
+.register-wrapper {
+    margin-top: 4vh;
+    padding: 10px;
+    font-family: 'PT Sans';
+}
+.input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    margin: 2vh 0;
+}   
+.input-container input {
+    border: 2px solid #000000;
+    border-radius: 0;
+    padding: 10px;
+    margin: 0;
+}
+.icon {
+    padding: 6px;
+    border: 2px solid #000000;
+    background: #CC0009;
+    color: white;
+    min-width: 40px;
+    max-height: 30px;
+    text-align: center;
+}
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+.register-wrapper .btn {
+    background-color: #CC0009;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 37%;
+    opacity: 0.9;
+    margin-bottom: 37vh;
+}
+/*  -=========================-
+    HELPER CLASSES
+-===========================-*/
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.space {
+    margin-bottom: 5vh;
+}
