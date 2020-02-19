@@ -1,18 +1,24 @@
 <?php
-$email = $_POST["email"];
-$wachtwoord =$_POST["password"];
+require ('config.php');
 
-$sql = "SELECT * FROM gegevens";
-$query = $db->query($sql);
-$items = $query->fetchAll(PDO::FETCH_ASSOC);
+$email = $_POST['email'];
+$wachtwoord =$_POST['password'];
 
-if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-  if ($email == ) {
-    // code...
-  }
-}
-else {
-  // code...
-}
+$password = $_GET['wachtwoord'];
+$sql = "SELECT * FROM gegevens WHERE wachtwoord= :passwordchek";
+$prepare = $db->prepare($sql);
+$prepare->execute([
+  ':passwordchek' => sha1($wachtwoord)
+]);
+$items = $prepare->fetch(PDO::FETCH_ASSOC);
+
+$mail = $_GET['email'];
+$sql = "SELECT gegevens.email, gegevens.wachtwoord FROM gegevens WHERE email= :mailchek";
+$prepare = $db->prepare($sql);
+$prepare->execute([
+  ':mailchek' => $email
+]);
+$item = $prepare->fetch(PDO::FETCH_ASSOC);
+
 
  ?>

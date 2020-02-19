@@ -1,4 +1,6 @@
 <?php
+require ('../config.php');
+
 $email = $_POST["email"];
 
 $sql = "SELECT * FROM gegevens";

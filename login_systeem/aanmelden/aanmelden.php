@@ -1,4 +1,6 @@
 <?php
+require ('../config.php');
+
 $voornaam = $_POST["voornaam-input"];
 $achternaam = $_POST["achternaam-input"];
 $geboortedatum = $_POST["geboortedatum-input"];
@@ -35,18 +37,21 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL) && filter_var($emailh, FILTER_VALI
         )
         VALUES
         (
-          $voornaam,
-          $achternaam,
-          $geboortedatum,
-          $woonplaats,
-          $straatnaam,
-          $huisnummer,
-          $postcode,
-          $telefoonnummer,
-          $email,
-          $wachtwoord
+          :voornaam,
+          :achternaam,
+          :geboortedatum,
+          :woonplaats,
+          :straatnaam,
+          :huisnummer,
+          :postcode,
+          :telefoonnummer,
+          :email,
+          :wachtwoord
           )
       ";
+      $result = $db->prepare($sql);
+      $result->execute([':email' => $email,':telefoonnummer' => $telefoonnummer,':postcode' => $postcode,':huisnummer' => $huisnummer,':straatnaam' => $straatnaam,
+                        ':woonplaats' => $woonplaats,':geboortedatum' => $geboortedatum,':achternaam' => $achternaam,':voornaam' => $voornaam,':wachtwoord' => sha1($wachtwoord)]);
     }
     else {
       echo "Uw wachtwoord herhaaling kwam niet overeen";
