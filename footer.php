@@ -1,9 +1,9 @@
 <footer>
   <div class="wrapper flex">
     <div class="social-media flex">
-      <i class="fab fa-facebook-square"></i>
-      <i class="fab fa-twitter-square"></i>
-      <i class="fab fa-instagram-square"></i>
+      <a href="#"><i class='fab'>&#xf082;</i></a>
+      <a href="#"><i class='fab'>&#xf081;</i></a>
+      <a href="#"><i class='fab'>&#xf16d;</i></a>
     </div>
     <div class="links flex">
       <a href="">Werken bij</a>
@@ -12,7 +12,7 @@
     </div>
   </div>
 </footer>
-
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <script src="js/vendor/modernizr-3.8.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script>
