@@ -8,6 +8,12 @@ use PHPMailer\PHPMailer\Exception;
 // Load Composer's autoloader and load all required php files
 require 'vendor\autoload.php';
 
+/*
+*
+* How the function works:
+* The function will send the user an email with html support, the mail
+*
+*/
 function SendMail($mailAdress, $userName, $subject, $mailBody, $altMailBody, $attachment)
 {
 
