@@ -6,7 +6,7 @@
   <title>Bioscoop AMO</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <link href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans&display=swap" rel="stylesheet">
@@ -17,6 +17,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -29,10 +30,10 @@
         <h1>Bioscoop AMO</h1>
       </div>
       <nav>
-        <a href="#hero_movies">Populair</a>
-        <a href="#nu">Nu</a>
-        <a href="#binnenkort">Binnenkort</a>
-        <a href="#kids">Kids</a>
+        <a href="index.php#hero_movies">Populair</a>
+        <a href="index.php#nu">Nu</a>
+        <a href="index.php#binnenkort">Binnenkort</a>
+        <a href="index.php#kids">Kids</a>
       </nav>
       <form action="" method="POST">
         <a href="loginpage.php">Account</a>
