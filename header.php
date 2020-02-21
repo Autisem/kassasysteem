@@ -30,10 +30,10 @@
         <h1>Bioscoop AMO</h1>
       </div>
       <nav>
-        <a href="#hero_movies">Populair</a>
-        <a href="#nu">Nu</a>
-        <a href="#binnenkort">Binnenkort</a>
-        <a href="#kids">Kids</a>
+        <a href="index.php#hero_movies">Populair</a>
+        <a href="index.php#nu">Nu</a>
+        <a href="index.php#binnenkort">Binnenkort</a>
+        <a href="index.php#kids">Kids</a>
       </nav>
       <form action="" method="POST">
         <a href="loginpage.php">Account</a>
