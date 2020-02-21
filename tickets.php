@@ -1,8 +1,9 @@
 <?php require('header.php'); ?>
+<link rel="stylesheet" href="css/style.css">
 
   <main>
     <div class="background-top-title"></div>
-    <div class="wrapper">
+    <div class="wrapper no-flex">
         <div class="title flex">
             <h1>Sonic (ORIGINAL VERSION)<br>Friday 14 februari 2020, 18:10 AMO zaal 1</h1>
             <a class="go-back" href="movie.php">Go Back</a>
@@ -50,7 +51,7 @@
                 <div class="voucher">
                     <h3>Voucher</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, sit odio vel beatae asperiores</p>
-                    <form action=""><input type="text" placeholder="code"><input type="submit" class="submit" value="add"></form>    
+                    <form action=""><input type="text" placeholder="code"><input type="submit" class="submit" value="add"></form>
                 </div>
                 <form class="go-to-next-stage"action=""><input type="submit" value="STEP 2: CHOOSE YOUR CHAIRS"></form>
             </div>
