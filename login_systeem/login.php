@@ -2,23 +2,23 @@
 require ('config.php');
 
 $email = $_POST['email'];
-$wachtwoord =$_POST['password'];
+$wachtwoord = $_POST['password'];
 
-$password = $_GET['wachtwoord'];
-$sql = "SELECT * FROM gegevens WHERE wachtwoord= :passwordchek";
+$sql = "SELECT * FROM gegevens WHERE wachtwoord= :passwordchek AND email = :email";
 $prepare = $db->prepare($sql);
 $prepare->execute([
-  ':passwordchek' => sha1($wachtwoord)
+  ':passwordchek' => sha1($wachtwoord),
+  ':email'        => $email
 ]);
-$items = $prepare->fetch(PDO::FETCH_ASSOC);
+$user = $prepare->fetch(PDO::FETCH_ASSOC);
 
-$mail = $_GET['email'];
-$sql = "SELECT gegevens.email, gegevens.wachtwoord FROM gegevens WHERE email= :mailchek";
-$prepare = $db->prepare($sql);
-$prepare->execute([
-  ':mailchek' => $email
-]);
-$item = $prepare->fetch(PDO::FETCH_ASSOC);
+if (!$user) {
+  exit('User password combination does not exist...');
+}
+
+$_SESSION['user'] = $user;
+
 
 
  ?>
+ <!-- $_SESSION -->
