@@ -189,7 +189,7 @@
       </h2>
       <div class="sectiongrid">
         <div class="grid-item">
-          <a href="">
+          <a href="movie.php">
             <img src="https://media.pathe.nl/thumb/360x508/gfx_content/posterhr/Sonic-OV-_ps_2_jpg_sd-high_Copyright-2019-Paramount-Pictures-and-Sega-of-America-Inc-All-Rights-Reserved.jpg" alt="movie">
             <div class="imgt">
               <p>SONIC</p>
@@ -230,7 +230,6 @@
           </a>
         </div>
       </div>
-    </div>
   </section>
   <section id="kids" class="sectionspacing">
     <div class="wrapper">
