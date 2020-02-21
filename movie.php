@@ -2,7 +2,7 @@
 
   <main>
     <div class="backimage"></div>
-    <div class="wrapper">
+    <div class="wrapper no-flex">
       <div class="movie-title">
         <div class="img-title">
           <img src="https://media.pathe.nl/thumb/180x254/gfx_content/posterhr/Sonic-OV-_ps_2_jpg_sd-high_Copyright-2019-Paramount-Pictures-and-Sega-of-America-Inc-All-Rights-Reserved.jpg" alt="">
@@ -11,7 +11,7 @@
       </div>
       <div class="movie-details flex">
         <div class="review">
-          <a href="#">&#9733;&#9733;&#9733;&#9733;&#9734</a>
+          <a href="#"></a>
           <p>99 minutes | English</p>
         </div>
         <div class="lore">
