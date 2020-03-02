@@ -8,6 +8,7 @@
           <div class="input-container">
             <i class="fa fa-user icon"></i>
             <input class="input-field" type="text" placeholder="Username" name="usrnm">
+            <input type="submit" value="submit">
           </div>
 
           <div class="input-container">
