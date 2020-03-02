@@ -1,4 +1,5 @@
 <?php require('header.php'); ?>
+<link rel="stylesheet" href="css/style.css">
 
   <main>
     <div class="wrapper">
@@ -25,7 +26,7 @@
             <i class="fa fa-key icon"></i>
             <input class="input-field" type="password" placeholder="Repeat Password" name="psw">
           </div>
-          
+
           <button type="submit" class="btn">Register</button>
         </form>
     </div>

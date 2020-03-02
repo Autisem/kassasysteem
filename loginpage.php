@@ -1,4 +1,5 @@
 <?php require('header.php'); ?>
+<link rel="stylesheet" href="css/style.css">
 
   <main>
     <div class="wrapper">
@@ -12,7 +13,7 @@
         <p class="account-info">You don't have an account yet. Don't worry just sign up <a href="registerpage.php">here!</a></p>
      </div>
         <div class="register">
-            
+
         </div>
     </div>
   </main>
