@@ -6,7 +6,7 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 // Load Composer's autoloader and load all required php files
-require 'vendor\autoload.php';
+require '..\vendor\autoload.php';
 
 /*
 *
