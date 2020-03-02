@@ -361,6 +361,21 @@ footer {
 .social-media {
 	width: 150px;
 }
+
+.social-media i {
+	transition: ease 0.2s;
+}
+
+.social-media:hover i {
+	transition: ease 0.2s;
+	color: rgb(185, 185, 185);
+}
+
+.social-media i:hover {
+	transition: ease 0.2s;
+	color: rgb(255, 255, 255);
+}
+
 .links {
 	width: 400px;
 }
