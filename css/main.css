@@ -96,13 +96,17 @@ textarea {
 
 /* ==========================================================================
    Author's custom styles
-   ========================================================================== */
+ ======================================================================= */
 /*  --===============================--
    GLOBAL
 -=================================- */
 * {
 	padding: 0;
 	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
@@ -198,6 +202,22 @@ header input {
 	background-color: rgb(32, 32, 32);
 }
 
+#hero_movies div.active > div:hover img {
+	transition: 0.2s;
+	filter: brightness(50%) blur(3px) saturate(125%);
+}
+
+#hero_movies div.active > div:hover .imgt {
+	display: block;
+	transition: 0.2s;
+}
+
+#hero_movies div.active > div a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .row {
 	margin-left: -35px;
 	margin-right: 0px;
@@ -210,6 +230,10 @@ header input {
 .carousel-control.left,
 .carousel-control.right {
 	background-image: none;
+}
+
+.carousel-control {
+	width: 10%;
 }
 
 .img-responsive {
@@ -279,6 +303,34 @@ section img {
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	column-gap: 1%;
 	row-gap: 20px;
+}
+
+section div.grid-item a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imgt {
+	display: none;
+	position: absolute;
+	color: white;
+	font-size: 1.4em;
+	text-align: center;
+}
+
+.imgt > p {
+	text-shadow: 2px 2px 0px black;
+}
+
+section div.grid-item:hover .imgt {
+	display: block;
+	transition: 0.2s;
+}
+
+section div.grid-item:hover img {
+	transition: 0.2s;
+	filter: brightness(50%) blur(3px) saturate(125%);
 }
 
 #nu {

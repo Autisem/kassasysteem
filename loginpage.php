@@ -2,22 +2,17 @@
 
   <main>
     <div class="wrapper">
-        <form class="login-wrapper" action="">
-        <h2>Login bij bioscoop AMO</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates dolor nobis veniam quod cumque ratione nostrum illum incidunt dolore, architecto earum vitae, pariatur sapiente reiciendis laboriosam non ducimus vero animi!</p>
-          <div class="input-container">
-            <i class="fa fa-user icon"></i>
-            <input class="input-field" type="text" placeholder="Username" name="usrnm">
-            <input type="submit" value="submit">
-          </div>
-
-          <div class="input-container">
-            <i class="fa fa-key icon"></i>
-            <input class="input-field" type="password" placeholder="Password" name="psw">
-          </div>
+      <div class="login">
+       <h1>Login</h1>
+        <form method="post">
+            <input type="text" name="u" placeholder="Username" required="required" />
+            <input type="password" name="p" placeholder="Password" required="required" />
+            <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
         </form>
+        <p class="account-info">You don't have an account yet. Don't worry just sign up <a href="registerpage.php">here!</a></p>
+     </div>
         <div class="register">
-            <p>You don't have an account yet. Don't worry just sign up <a href="registerpage.php">here!</a></p>
+            
         </div>
     </div>
   </main>
