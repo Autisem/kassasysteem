@@ -36,6 +36,8 @@
       </nav>
       <form action="" method="POST">
         <a href="loginpage.php">Login</a>
+        <p>or</p>
+        <a href="registerpage.php">Register</a>
         <input type="text" name="zoek" placeholder="Zoek">
       </form>
     </div>
