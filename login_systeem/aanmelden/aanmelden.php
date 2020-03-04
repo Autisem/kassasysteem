@@ -14,9 +14,16 @@ $emailh = $_POST["email-two-input"];
 $wachtwoord = $_POST["wachtwoord-input"];
 $wachtwoordh = $_POST["wachtwoord-two-input"];
 
-$sql = "SELECT * FROM gegevens";
-$query = $db->query($sql);
+$sqlAsk = "SELECT * FROM gegevens WHERE email=:email AND wachtwoord=:wachtwoord";
+$query = $db->prepare($sqlAsk);
+$query->execute([':email' => $email,':wachtwoord' => sha1($wachtwoord)]);
 $items = $query->fetchAll(PDO::FETCH_ASSOC);
+
+if(!(empty($items))){
+  echo "The gebruiker is all regristeerd";
+  var_dump($items);
+  exit();
+}
 
 if (filter_var($email, FILTER_VALIDATE_EMAIL) && filter_var($emailh, FILTER_VALIDATE_EMAIL)) {
   if ($email == $emailh) {

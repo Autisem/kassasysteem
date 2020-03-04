@@ -1,6 +1,6 @@
 <?php
 $dbHost = '127.0.0.1';
-$dbName = 'loginkassasysteem';
+$dbName = 'bioscoop';
 $dbUser = 'root';
 $dbPass = '';
 
