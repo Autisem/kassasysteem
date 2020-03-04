@@ -1,6 +1,10 @@
 <?php
 require ('config.php');
 
+session_start();
+
+$_SESSION["name"];
+
 $email = $_POST['email'];
 $wachtwoord =$_POST['password'];
 
