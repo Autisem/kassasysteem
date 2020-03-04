@@ -26,7 +26,9 @@
   <header>
     <div class="wrapper flex">
       <div class="brand">
-        <h1>Bioscoop AMO</h1>
+        <a href="index.php">
+          <h1>Bioscoop AMO</h1>
+        </a>
       </div>
       <nav>
         <a href="index.php#hero_movies">Populair</a>
