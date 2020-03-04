@@ -1,5 +1,6 @@
 <?php
 require ('../config.php');
+require ('../../php/sendmail.php');
 
 $email = $_POST["email"];
 
@@ -8,6 +9,10 @@ $query = $db->query($sql);
 $items = $query->fetchAll(PDO::FETCH_ASSOC);
 
 if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+  SendMail($email, "het werkt", "Wachtwoord vergeten", "mailbody", "Deze email is niet succes vol ingeladen");
+
+  //persoon naam kopelen aan emial $naamUser
+
   // $sqlt = "SELECT * FROM loginkassasysteem WHERE email = :email";
   // $queryt = $db->prepare($sqlt);
   // $preparet->execute([

@@ -1,6 +1,10 @@
 <?php
 require ('config.php');
 
+session_start();
+
+$_SESSION["name"];
+
 $email = $_POST['email'];
 $wachtwoord =$_POST['password'];
 
@@ -19,6 +23,7 @@ $prepare->execute([
   ':mailchek' => $email
 ]);
 $item = $prepare->fetch(PDO::FETCH_ASSOC);
+
 
 
  ?>
