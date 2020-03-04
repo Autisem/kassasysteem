@@ -137,6 +137,7 @@ p,
 a {
 	font-family: 'PT Sans', sans-serif;
 	text-decoration: none;
+	color: white;
 }
 
 i {
@@ -181,23 +182,35 @@ footer i:hover {
 .brand {
 	margin: 0 20px;
 }
+
 header {
 	background: #cc0000;
 	font-size: 1.3rem;
 	font-family: oswald;
 	box-shadow: 0px 2px 10px 0px rgba(94, 94, 94, 0.75);
 }
+
 header nav {
 	display: flex;
 	justify-content: space-between;
 	width: 300px;
 }
+
 header input {
 	padding: 8px;
 	width: 160px;
 	margin: 0 10px;
 	border-radius: 10px;
 	border: 1px solid white;
+}
+
+header form {
+	display: flex;
+	align-items: center;
+}
+
+header p {
+	margin: 0 5px;
 }
 
 /*  --===============================--
