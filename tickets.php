@@ -29,22 +29,22 @@
                         <tr>
                             <td>NORMAl</td>
                             <td>€9,95</td>
-                            <td><form action=""><input type="number" placeholder="0"></form></td>
+                            <td><form action=""><input type="number" placeholder="0" min="0" max="10"></form></td>
                         </tr>
                         <tr>
                             <td>NORMAl</td>
                             <td>€9,95</td>
-                            <td><form action=""><input type="number" placeholder="0"></form></td>
+                            <td><form action=""><input type="number" placeholder="0" min="0" max="10"></form></td>
                         </tr>
                         <tr>
                             <td>CHILD</td>
                             <td>€9,95</td>
-                            <td><form action=""><input type="number" placeholder="0"></form></td>
+                            <td><form action=""><input type="number" placeholder="0" min="0" max="10"></form></td>
                         </tr>
                         <tr>
                             <td>CHILD</td>
                             <td>€9,95</td>
-                            <td><form action=""><input type="number" placeholder="0"></form></td>
+                            <td><form action=""><input type="number" placeholder="0" min="0" max="10"></form></td>
                         </tr>
                     </tbody>
                 </table>
