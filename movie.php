@@ -13,7 +13,7 @@
       <div class="movie-details flex">
         <div class="review">
           <a href="#">&#9733;&#9733;&#9733;&#9733;&#9734;</a>
-          <p>99 minutes | English</p>
+          <p>99 minutes | English <br><strong>genre: adventure, comedy</strong></p>
         </div>
         <div class="lore">
           <p>Release: 13-02-2020<br><br>Sonic is the new live-action adventure based on the popular Sega video game franchise. Sonic and his new best friend Tom try the bad guy Dr. Stop Robotnik and save the world.</p>
