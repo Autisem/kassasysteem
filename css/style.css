@@ -370,7 +370,6 @@ p.account-info {
 	text-decoration: underline;
 }
 .wachtwoord {
-	margin-bottom: 62vh;
 	color: white;
 }
 .wachtwoord form {
@@ -572,7 +571,6 @@ input:focus {
 	cursor: pointer;
 	width: 37%;
 	opacity: 0.9;
-	margin-bottom: 37vh;
 }
 .register-wrapper input {
 	width: 200px;
