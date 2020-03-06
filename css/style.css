@@ -358,6 +358,13 @@ color: #ffffff;
     color: #CC0009;
     text-decoration: underline;
 }
+.wachtwoord {
+  margin-bottom: 62vh;
+  color: white;
+}
+.wachtwoord form {
+  padding: 20px 0;
+}
 
 /*  -=========================-
     REGISTER
