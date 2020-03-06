@@ -5,6 +5,7 @@ require 'php/dbconnect.php';
 echo '<form action="" method="post">Movie ID:<input type="text" name="name">
       User ID:<input type="text" name="user">
       Date: <input type="date" name="time">
+      Seat: <input type="number" name="seat">
       <input type="submit">
       </form>';
 
@@ -13,6 +14,7 @@ $datestro = strtotime($_POST['time']);
 $datetime = date('Y-m-d H:i:s', $datestro);
 $film = $_POST['name'];
 $owner = $_POST['user'];
+$seat = $_POST['seat'];
 
 $sql = "SELECT id, name FROM films WHERE name = :name";
 $quary = $db->prepare($sql);
@@ -21,14 +23,14 @@ $item = $quary->fetch(PDO::FETCH_ASSOC);
 
 $movieName = $item['id'];
 
-$orderSQL = "INSERT INTO reserveringen (owner, film, day_and_time) VALUES (?, ?, ?)";
+$orderSQL = "INSERT INTO reserveringen (owner, film, day_and_time,seat) VALUES (?, ?, ?, ?)";
 $orderSTMT = $db->prepare($orderSQL);
-$orderSTMT->execute([$owner,$movieName,$datetime]);
+$orderSTMT->execute([$owner,$movieName,$datetime, $sear]);
 
 
 echo "made order!";
 }
-$QuaryGetOrders = "SELECT reserveringen.id,  gegevens.voornaam, reserveringen.film, films.name as movieName
+$QuaryGetOrders = "SELECT reserveringen.id,  gegevens.voornaam, reserveringen.film, reserveringen.seat, films.name as movieName
                   FROM reserveringen
                   INNER JOIN gegevens ON reserveringen.owner = gegevens.id
                   INNER JOIN films ON reserveringen.film = films.id";
@@ -39,7 +41,8 @@ foreach($result as $item ){
 echo '<tr>'.
 '<td>'.  $item['id'].'|||</td>'.
 '<td>'.  $item['voornaam'].'|||</td>'.
-'<td>'.  $item['movieName'].'</td>'
+'<td>'.  $item['movieName'].'|||</td>'.
+'<td>'.  $item['seat'].'|||</td>'
 .'</tr>';
 }
 echo '</table>';
