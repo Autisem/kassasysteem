@@ -284,5 +284,6 @@
     </div>
   </section>
 </main>
+<footer>
 
 <?php require('footer.php'); ?>

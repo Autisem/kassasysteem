@@ -111,6 +111,7 @@ html {
 
 body {
 	line-height: 1.1;
+	background-color: currentColor;
 }
 
 h1,
@@ -121,6 +122,10 @@ h5,
 h6 {
 	color: white;
 	font-family: 'Oswald', sans-serif;
+}
+
+.h1 {
+	color: white;
 }
 
 a {
@@ -379,6 +384,15 @@ footer {
 	box-shadow: 0px 0px 50px 0px black;
 	padding: 10px 0;
 }
+
+.footer {
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	height: 50px;
+	width: 100%;
+}
+
 .social-media {
 	width: 150px;
 }
@@ -399,6 +413,23 @@ footer {
 
 .links {
 	width: 400px;
+}
+
+/*  --===============================--
+  FOOTER
+-=================================- */
+
+td a {
+	display: flex;
+	align-items: center;
+}
+
+.table img {
+	width: 250px;
+}
+
+.form-control {
+	margin-bottom: 20px;
 }
 
 /* ==========================================================================
