@@ -226,26 +226,26 @@ h4 {
 /*  -=========================-
     TABLE
 -===========================-*/
-table {
+.order table {
 	margin: 10px 0;
 	background: #e0e1e4;
 	width: 100%;
 }
-table thead tr td:nth-child(1),
-table tbody tr td:nth-child(1) {
+.order table thead tr td:nth-child(1),
+.order table tbody tr td:nth-child(1) {
 	width: 400px;
 	padding: 6px;
 }
-table thead tr td:nth-child(2),
-table tbody tr td:nth-child(2) {
+.order table thead tr td:nth-child(2),
+.order table tbody tr td:nth-child(2) {
 	width: 60px;
 }
-table thead tr td {
+.order table thead tr td {
 	background: #cc0009;
 	color: white;
 	padding: 10px;
 }
-table input[type=number] {
+.order table input[type=number] {
 	width: 69px;
 }
 
