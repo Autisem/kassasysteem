@@ -3,32 +3,57 @@
 
   <main>
     <div class="wrapper">
-        <form class="register-wrapper" action="">
-          <h2>Registreren bij bioscoop AMO</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates dolor nobis veniam quod cumque ratione nostrum illum incidunt dolore, architecto earum vitae, pariatur sapiente reiciendis laboriosam non ducimus vero animi!</p>
-          <div class="input-container">
-            <i class="fa fa-user icon"></i>
-            <input class="input-field" type="text" placeholder="Username" name="usrnm">
-          </div>
-          <div class="input-container">
-            <i class="fa fa-envelope icon"></i>
-            <input class="input-field" type="text" placeholder="Email" name="email">
-          </div>
-          <div class="input-container">
-            <i class="fa fa-envelope icon"></i>
-            <input class="input-field" type="text" placeholder="Repeat Email" name="email">
-          </div>
-          <div class="input-container">
-            <i class="fa fa-key icon"></i>
-            <input class="input-field" type="password" placeholder="Password" name="psw">
-          </div>
-          <div class="input-container">
-            <i class="fa fa-key icon"></i>
-            <input class="input-field" type="password" placeholder="Repeat Password" name="psw">
-          </div>
-
-          <button type="submit" class="btn">Register</button>
-        </form>
+      <form class="register-wrapper" action="login_systeem/aanmelden/aanmelden.php" method="post">
+        <div class="voornaam-input" id="voornaam-input">
+          <label for="voornaam-input" id="voornaam-input">Voornaam:</label>
+          <input type="text" name="voornaam-input" id="voornaam-input">
+        </div>
+        <div class="achternaam-input" id="achternaam-input">
+          <label for="achternaam-input" id="achternaam-input">Achternaam:</label>
+          <input type="text" name="achternaam-input" id="achternaam-input">
+        </div>
+        <div class="geboortedatum-input" id="geboortedatum-input">
+          <label for="geboortedatum-input" id="geboortedatum-input">Geboortedatum:</label>
+          <input type="date" name="geboortedatum-input" id="geboortedatum-input">
+        </div>
+        <div class="woonplaats-input" id="woonplaats-input">
+          <label for="woonplaats-input" id="woonplaats-input">Woonplaats:</label>
+          <input type="text" name="woonplaats-input" id="woonplaats-input">
+        </div>
+        <div class="straatnaam-input" id="straatnaam-input">
+          <label for="straatnaam-input" id="straatnaam-input">Straatnaam:</label>
+          <input type="text" name="straatnaam-input" id="straatnaam-input">
+        </div>
+        <div class="huisnummer-input" id="huisnummer-input">
+          <label for="huisnummer-input" id="huisnummer-input">Huisnummer:</label>
+          <input type="text" name="huisnummer-input" id="huisnummer-input">
+        </div>
+        <div class="postcode-input" id="postcode-input">
+          <label for="postcode-input" id="postcode-input">Postcode:</label>
+          <input type="text" name="postcode-input" min="0" max="6" id="postcode-input">
+        </div>
+        <div class="telefoonnummer-input" id="telefoonnummer-input">
+          <label for="telefoonnummer-input" id="telefoonnummer-input">Telefoonnummer:</label>
+          <input type="text" name="telefoonnummer-input" id="telefoonnummer-input">
+        </div>
+        <div class="email-input" id="email-input">
+          <label for="email-input" id="email-input">Email addres:</label>
+          <input type="email" name="email-input" id="email-input">
+        </div>
+        <div class="email-two-input" id="email-two-input">
+          <label for="email-two-input" id="email-two-input">Herhaaling Email:</label>
+          <input type="email" name="email-two-input" id="email-two-input">
+        </div>
+        <div class="wachtwoord-input" id="wachtwoord-input">
+          <label for="wachtwoord-input" id="wachtwoord-input">Wachtwoord:</label>
+          <input type="password" name="wachtwoord-input" id="wachtwoord-input">
+        </div>
+        <div class="wachtwoord-two-input" id="wachtwoord-two-input">
+          <label for="wachtwoord-two-input" id="wachtwoord-two-input">Herhaaling Wachtwoord:</label>
+          <input type="password" name="wachtwoord-two-input" id="wachtwoord-two-input">
+        </div>
+        <input type="submit" name="submit" value="Aanmelden"class="btn btn-primary btn-block btn-large">
+      </form>
     </div>
   </main>
 
