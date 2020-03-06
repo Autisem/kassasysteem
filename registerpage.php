@@ -3,7 +3,7 @@
 
   <main>
     <div class="wrapper">
-      <form class="register-wrapper" action="aanmelden.php" method="post">
+      <form class="register-wrapper" action="login_systeem/aanmelden/aanmelden.php" method="post">
         <div class="voornaam-input" id="voornaam-input">
           <label for="voornaam-input" id="voornaam-input">Voornaam:</label>
           <input type="text" name="voornaam-input" id="voornaam-input">

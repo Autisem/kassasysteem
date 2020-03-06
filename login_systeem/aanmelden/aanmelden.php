@@ -60,7 +60,7 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL) && filter_var($emailh, FILTER_VALI
       $result->execute([':email' => $email,':telefoonnummer' => $telefoonnummer,':postcode' => $postcode,':huisnummer' => $huisnummer,':straatnaam' => $straatnaam,
                         ':woonplaats' => $woonplaats,':geboortedatum' => $geboortedatum,':achternaam' => $achternaam,':voornaam' => $voornaam,':wachtwoord' => sha1($wachtwoord)]);
 
-      header("Location: ../login.html");
+      header("Location: ../../loginpage.php");
     }
     else {
       echo "Uw wachtwoord herhaaling kwam niet overeen";
