@@ -652,11 +652,11 @@ ol {
 .seat:nth-child(6) {
     margin-right: 14.28571428571429%;
 }
-input[type=checkbox] {
+.seat input[type=checkbox] {
     position: absolute;
     opacity: 0;
 }
-input[type=checkbox]:checked
+.seat input[type=checkbox]:checked
     + label {
     color: black;
     background: #FFC426;
@@ -665,7 +665,7 @@ input[type=checkbox]:checked
     animation-duration: 300ms;
     animation-fill-mode: both;
 }
-input[type=checkbox]:disabled
+.seat input[type=checkbox]:disabled
     + label {
     background: #dddddd;
     text-indent: -9999px;
@@ -685,7 +685,7 @@ input[type=checkbox]:disabled
         box-shadow: none;
         cursor: not-allowed;
 }
-label {
+.seat label {
     color: white;
     display: block;
     position: relative;
@@ -700,7 +700,7 @@ label {
     animation-duration: 300ms;
     animation-fill-mode: both;
     }
-    label:before {
+    .seat label:before {
     content: "";
     position: absolute;
     width: 75%;
@@ -711,7 +711,7 @@ label {
     background: rgba(255,255,255,.4);
     border-radius: 3px;
     }
-    label:hover {
+    .seat label:hover {
     cursor: pointer;
     box-shadow: 0 0 0px 2px #5C6AFF;
 }
