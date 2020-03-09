@@ -330,7 +330,9 @@
                 </tbody>
             </table>
             <div class="screen"><h3>scherm</h3></div>
-            <input type="submit" name="submit" style="background:#FFC426; border:none; font-size: 1.3rem;" class="btn btn-primary btn-block btn-large" value="STEP 3: CONFIRMATION">
+            <form action="ordering.php" method="post">
+              <input type="submit" name="submit" style="background:#FFC426; border:none; font-size: 1.3rem;" class="btn btn-primary btn-block btn-large" value="STEP 3: CONFIRMATION">
+            </form>
         </form>
     </div> <!-- WRAPPER END -->
   </main> <!-- MAIN END -->
