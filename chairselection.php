@@ -6,7 +6,7 @@
         <div class="text-center">
             <h2>Plaatsen Selecteren</h2>
         </div>
-        <form action="backend/seatController.php" method="POST">
+        <form action="ordering.php" method="POST">
             <table class="chair-selection">
                 <tbody>
                     <tr>
@@ -330,9 +330,7 @@
                 </tbody>
             </table>
             <div class="screen"><h3>scherm</h3></div>
-            <form action="ordering.php" method="post">
               <input type="submit" name="submit" style="background:#FFC426; border:none; font-size: 1.3rem;" class="btn btn-primary btn-block btn-large" value="STEP 3: CONFIRMATION">
-            </form>
         </form>
     </div> <!-- WRAPPER END -->
   </main> <!-- MAIN END -->
