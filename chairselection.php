@@ -2,9 +2,28 @@
 <link rel="stylesheet" href="css/style.css">
 
   <main> <!-- MAIN START -->
-    <div class="wrapper no-flex"> <!-- WRAPPER START -->
+    <div class="background-top-title"></div>
+    <div class="wrapper no-flex">
+        <div class="title flex">
+            <h1>Sonic (ORIGINAL VERSION)<br>Friday 14 februari 2020, 18:10 AMO zaal 1</h1>
+            <a class="go-back" href="movie.php">Go Back</a>
+        </div>
+        <div class="progress">
+            <a href="tickets.php">
+                <div class="bar">1. CHOSING TICKETS</div>
+            </a>
+            <a href="chairselection.php">
+                <div class="bar selected">2. SELECTING CHAIRS</div>
+            </a>
+            <a href="ordering.php">
+                <div class="bar">3. ORDERING</div>
+            </a>
+            <a href="#">
+                <div class="bar">4. PAYOUT</div>
+            </a>
+        </div>
         <div class="text-center">
-            <h2>Plaatsen Selecteren</h2>
+          <h2>Plaatsen selecteren</h2>
         </div>
         <form action="ordering.php" method="POST">
             <table class="chair-selection">

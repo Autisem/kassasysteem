@@ -14,7 +14,7 @@
                     <a href="tickets.php">
                         <div class="bar selected">1. CHOSING TICKETS</div>
                     </a>
-                    <a href="#">
+                    <a href="chairselection.php">
                         <div class="bar">2. SELECTING CHAIRS</div>
                     </a>
                     <a href="ordering.php">
