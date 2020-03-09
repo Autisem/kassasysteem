@@ -1,4 +1,3 @@
-<footer>
   <div class="wrapper flex">
     <div class="social-media flex">
       <a href="#"><i class='fab'>&#xf082;</i></a>
@@ -12,6 +11,7 @@
     </div>
   </div>
 </footer>
+
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <script src="js/vendor/modernizr-3.8.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

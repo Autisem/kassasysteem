@@ -1,7 +1,7 @@
 <?php require('header.php'); ?>
 <link rel="stylesheet" href="css/style.css">
 
-  <main>
+<main>
     <div class="background-top-title"></div>
     <div class="wrapper no-flex">
         <div class="title flex">
@@ -11,10 +11,18 @@
         <div class="order">
             <div class="tickets">
                 <div class="progress">
-                    <a href="tickets.php"><div class="bar selected">1. CHOSING TICKETS</div></a>
-                    <a href="#"><div class="bar">2. SELECTING CHAIRS</div></a>
-                    <a href="ordering.php"><div class="bar">3. ORDERING</div></a>
-                    <a href="#"><div class="bar">4. PAYOUT</div></a>
+                    <a href="tickets.php">
+                        <div class="bar selected">1. CHOSING TICKETS</div>
+                    </a>
+                    <a href="chairselection.php">
+                        <div class="bar">2. SELECTING CHAIRS</div>
+                    </a>
+                    <a href="ordering.php">
+                        <div class="bar">3. ORDERING</div>
+                    </a>
+                    <a href="#">
+                        <div class="bar">4. PAYOUT</div>
+                    </a>
                 </div>
                 <p>You can order up to a max of 12 tickets.</p>
                 <table>
@@ -29,22 +37,30 @@
                         <tr>
                             <td>NORMAl</td>
                             <td>€9,95</td>
-                            <td><form action=""><input type="number" placeholder="0" min="0" max="10"></form></td>
+                            <td>
+                                <form action=""><input type="number" placeholder="0" min="0" max="10"></form>
+                            </td>
                         </tr>
                         <tr>
                             <td>NORMAl</td>
                             <td>€9,95</td>
-                            <td><form action=""><input type="number" placeholder="0" min="0" max="10"></form></td>
+                            <td>
+                                <form action=""><input type="number" placeholder="0" min="0" max="10"></form>
+                            </td>
                         </tr>
                         <tr>
                             <td>CHILD</td>
                             <td>€9,95</td>
-                            <td><form action=""><input type="number" placeholder="0" min="0" max="10"></form></td>
+                            <td>
+                                <form action=""><input type="number" placeholder="0" min="0" max="10"></form>
+                            </td>
                         </tr>
                         <tr>
                             <td>CHILD</td>
                             <td>€9,95</td>
-                            <td><form action=""><input type="number" placeholder="0" min="0" max="10"></form></td>
+                            <td>
+                                <form action=""><input type="number" placeholder="0" min="0" max="10"></form>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -53,7 +69,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, sit odio vel beatae asperiores</p>
                     <form action=""><input type="text" placeholder="code"><input type="submit" class="submit" value="add"></form>
                 </div>
-                <form class="go-to-next-stage"action=""><input type="submit" value="STEP 2: CHOOSE YOUR CHAIRS"></form>
+                <form class="go-to-next-stage" action="chairselection.php"><input type="submit" value="STEP 2: CHOOSE YOUR CHAIRS"></form>
             </div>
             <div class="order-confirmation">
                 <h3>YOUR ORDER</h3>
@@ -71,17 +87,19 @@
                 </div>
                 <div class="warning">
                     <p>Pay attention:
-                    Recommended for 9 years and older.
-                    <br><br>
-                    Child tickets are valid for children up to and including 11 years.
-                    <br><br>
-                    Regular Unlimited subscribers pay a surcharge for 3D films, IMAX, Dolby Cinema, 4DX and ScreenX.
-                    <br><br>
-                    The 'Discount' ticket is only valid for 65+, teenagers (12 to 17) or on presentation of a student / CJP pass. Morning discount applies to everyone.</p>
+                        Recommended for 9 years and older.
+                        <br><br>
+                        Child tickets are valid for children up to and including 11 years.
+                        <br><br>
+                        Regular Unlimited subscribers pay a surcharge for 3D films, IMAX, Dolby Cinema, 4DX and ScreenX.
+                        <br><br>
+                        The 'Discount' ticket is only valid for 65+, teenagers (12 to 17) or on presentation of a student / CJP pass. Morning discount applies to everyone.</p>
                 </div>
             </div>
         </div>
     </div>
-  </main>
+</main>
 
-<?php require('footer.php'); ?>
+<footer>
+
+    <?php require('footer.php'); ?>

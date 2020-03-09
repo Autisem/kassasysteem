@@ -1,7 +1,7 @@
 <?php require('header.php'); ?>
 <link rel="stylesheet" href="css/style.css">
 
-  <main>
+<main>
     <div class="background-top-title"></div>
     <div class="wrapper no-flex">
         <div class="title flex">
@@ -11,10 +11,18 @@
         <div class="order">
             <div class="tickets">
                 <div class="progress">
-                    <a href="tickets.php"><div class="bar">1. CHOSING TICKETS</div></a>
-                    <a href="#"><div class="bar">2. SELECTING CHAIRS</div></a>
-                    <a href="ordering.php"><div class="bar selected">3. ORDERING</div></a>
-                    <a href="#"><div class="bar">4. PAYOUT</div></a>
+                    <a href="tickets.php">
+                        <div class="bar">1. CHOSING TICKETS</div>
+                    </a>
+                    <a href="chairselection.php">
+                        <div class="bar">2. SELECTING CHAIRS</div>
+                    </a>
+                    <a href="ordering.php">
+                        <div class="bar selected">3. ORDERING</div>
+                    </a>
+                    <a href="#">
+                        <div class="bar">4. PAYOUT</div>
+                    </a>
                 </div>
                 <h3>YOUR ORDER</h3>
                 <div class="order-movie-info order-page">
@@ -41,13 +49,15 @@
                         </div>
                     </div>
                 </div>
-                <form class="go-to-next-stage space"action=""><input type="submit" value="PAYOUT"></form>
+                <form class="go-to-next-stage space" action=""><input type="submit" value="PAYOUT"></form>
             </div>
             <div class="order-confirmation">
 
             </div>
         </div>
     </div>
-  </main>
+</main>
 
-<?php require('footer.php'); ?>
+<footer>
+
+    <?php require('footer.php'); ?>
