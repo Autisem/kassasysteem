@@ -69,7 +69,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, sit odio vel beatae asperiores</p>
                     <form action=""><input type="text" placeholder="code"><input type="submit" class="submit" value="add"></form>
                 </div>
-                <form class="go-to-next-stage" action=""><input type="submit" value="STEP 2: CHOOSE YOUR CHAIRS"></form>
+                <form class="go-to-next-stage" action="chairselection.php"><input type="submit" value="STEP 2: CHOOSE YOUR CHAIRS"></form>
             </div>
             <div class="order-confirmation">
                 <h3>YOUR ORDER</h3>
