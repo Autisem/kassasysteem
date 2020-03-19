@@ -6,7 +6,7 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 // Load Composer's autoloader and load all required php files
-require '..\vendor\autoload.php';
+require $_SERVER [ 'DOCUMENT_ROOT' ]  . '/kassaSysteem/vendor/autoload.php';
 
 /*
 *
@@ -21,6 +21,10 @@ require '..\vendor\autoload.php';
 * $altMailBody - this will be used in case the normal mail body can not be loaded, this should be in a plain text format
 * $attachment - this is optional and can be left empty, this will add a file or image to the mail as an attachment
 */
+function MailTest(){
+die('testing');
+}
+
 function SendMail($mailAdress, $userName, $subject, $mailBody, $altMailBody, $attachment)
 {
 
