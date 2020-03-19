@@ -49,7 +49,7 @@
                         </div>
                     </div>
                 </div>
-                <form class="go-to-next-stage space" action=""><input type="submit" value="PAYOUT"></form>
+                <form class="go-to-next-stage" action=""><input type="submit" value="PAYOUT"></form>
             </div>
             <div class="order-confirmation">
 
@@ -58,6 +58,6 @@
     </div>
 </main>
 
-<footer>
+<footer class="footer">
 
     <?php require('footer.php'); ?>

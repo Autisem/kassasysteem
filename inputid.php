@@ -10,7 +10,6 @@
 
     <a href="index.php" class="btn btn-danger">cancel</a>
     <input name="type" type="submit" class="btn btn-success" value="confirm">
-
 </div>
 
 <footer class="footer">

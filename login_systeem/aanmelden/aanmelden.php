@@ -1,6 +1,8 @@
 <?php
 require ('../config.php');
+require ('../../php/sendmail.php');
 
+MailTest();
 $voornaam = $_POST["voornaam-input"];
 $achternaam = $_POST["achternaam-input"];
 $geboortedatum = $_POST["geboortedatum-input"];

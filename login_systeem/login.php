@@ -1,11 +1,11 @@
 <?php
 require ('config.php');
-
+require ('../php/sendmail.php');
 session_start();
 
 
 
-
+MailTest();
 
 $email = $_POST['email-input'];
 $wachtwoord =$_POST['password-input'];
