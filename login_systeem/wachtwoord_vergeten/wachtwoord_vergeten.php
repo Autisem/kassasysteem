@@ -1,6 +1,7 @@
 <?php
 require ('../config.php');
 require ('../../php/sendmail.php');
+require "C:/xampp/htdocs/School/project/periode3/kassasysteem/vendor/autoload.php";
 
 $email = $_POST["email"];
 
