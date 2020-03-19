@@ -1,15 +1,15 @@
 <?php
 function header($title)
 {
-  $mailContent =
+  return $mailContent =
   "
   <html>
     <head>
     </head>
 
     <body>
-      <header style="background-color: \"#0c0c0c;\">
-
+      <header>
+        <h1>$title</h1>
       </header>
     </body>
   </html>

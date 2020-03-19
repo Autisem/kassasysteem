@@ -6,7 +6,7 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 // Load Composer's autoloader and load all required php files
-require $_SERVER [ 'DOCUMENT_ROOT' ]  . '/kassaSysteem/vendor/autoload.php';
+require_once __DIR__.'../../vendor/autoload.php';
 
 /*
 *
