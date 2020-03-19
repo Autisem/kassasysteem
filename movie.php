@@ -60,39 +60,40 @@
       </div>
     </div>
   </div>
-  <div class="background-black"></div>
-  <div class="wrapper no-flex">
-    <div class="trailers-photos">
-      <h4>Trailers</h4><br>
-      <div class="trailer flex">
-        <img src="https://media.pathe.nl/thumb/156x156/gfx_content/other/api/filmdepot/v1/movie/download/23754_122203_st_sd-high.jpg" alt="">
-      </div>
-      <h4>Photo`s</h4>
-      <div class="stills">
-        <img src="https://media.pathe.nl/thumb/156x156/gfx_content/other/api/filmdepot/v1/movie/download/23754_122209_st_sd-high.jpg" alt="">
-        <img src="https://media.pathe.nl/thumb/156x156/gfx_content/other/api/filmdepot/v1/movie/download/23754_122207_st_sd-high.jpg" alt="">
-        <img src="https://media.pathe.nl/thumb/156x156/gfx_content/other/api/filmdepot/v1/movie/download/23754_122205_st_sd-high.jpg" alt="">
-        <img src="https://media.pathe.nl/thumb/156x156/gfx_content/other/api/filmdepot/v1/movie/download/23754_122213_st_sd-high.jpg" alt="">
-        <img src="https://media.pathe.nl/thumb/156x156/gfx_content/other/api/filmdepot/v1/movie/download/23754_122203_st_sd-high.jpg" alt="">
-      </div>
-      <h4>Cast & Crew</h4>
-      <div class="cast-crew">
-        <div class="cast">
-          <img src="https://media.pathe.nl/gfx_content/PathePartners/cast-23898-JeffFowler.jpg" alt=""><br>
-          <h5>Jeff Fowler</h5><br>
-          <span>Director</span>
+  <div class="info-movie">
+    <div class="wrapper no-flex">
+      <div class="trailers-photos">
+        <h4>Trailers</h4><br>
+        <div class="trailer flex">
+          <img src="https://media.pathe.nl/thumb/156x156/gfx_content/other/api/filmdepot/v1/movie/download/23754_122203_st_sd-high.jpg" alt="">
         </div>
-        <div class="cast">
-          <img src="https://media.pathe.nl/nocropthumb/120x160/gfx_content/Profiel/TikaSumpterNobodysFoolProfiel.jpg" alt=""><br>
-          <h5>Tika Sumpter</h5><br>
+        <h4>Photo`s</h4>
+        <div class="stills">
+          <img src="https://media.pathe.nl/thumb/156x156/gfx_content/other/api/filmdepot/v1/movie/download/23754_122209_st_sd-high.jpg" alt="">
+          <img src="https://media.pathe.nl/thumb/156x156/gfx_content/other/api/filmdepot/v1/movie/download/23754_122207_st_sd-high.jpg" alt="">
+          <img src="https://media.pathe.nl/thumb/156x156/gfx_content/other/api/filmdepot/v1/movie/download/23754_122205_st_sd-high.jpg" alt="">
+          <img src="https://media.pathe.nl/thumb/156x156/gfx_content/other/api/filmdepot/v1/movie/download/23754_122213_st_sd-high.jpg" alt="">
+          <img src="https://media.pathe.nl/thumb/156x156/gfx_content/other/api/filmdepot/v1/movie/download/23754_122203_st_sd-high.jpg" alt="">
         </div>
-        <div class="cast">
-          <img src="https://media.pathe.nl/nocropthumb/120x160/gfx_content/allocine/medias/nmedia/18/35/81/james-marsden_6059.jpg" alt=""><br>
-          <h5>James Marsden</h5><br>
-        </div>
-        <div class="cast">
-          <img src="https://media.pathe.nl/nocropthumb/120x160/gfx_content/Profiel/JimCarreySonicProfielfoto.jpg" alt=""><br>
-          <h5>Jim Carrey</h5><br>
+        <h4>Cast & Crew</h4>
+        <div class="cast-crew">
+          <div class="cast">
+            <img src="https://media.pathe.nl/gfx_content/PathePartners/cast-23898-JeffFowler.jpg" alt=""><br>
+            <h5>Jeff Fowler</h5><br>
+            <span>Director</span>
+          </div>
+          <div class="cast">
+            <img src="https://media.pathe.nl/nocropthumb/120x160/gfx_content/Profiel/TikaSumpterNobodysFoolProfiel.jpg" alt=""><br>
+            <h5>Tika Sumpter</h5><br>
+          </div>
+          <div class="cast">
+            <img src="https://media.pathe.nl/nocropthumb/120x160/gfx_content/allocine/medias/nmedia/18/35/81/james-marsden_6059.jpg" alt=""><br>
+            <h5>James Marsden</h5><br>
+          </div>
+          <div class="cast">
+            <img src="https://media.pathe.nl/nocropthumb/120x160/gfx_content/Profiel/JimCarreySonicProfielfoto.jpg" alt=""><br>
+            <h5>Jim Carrey</h5><br>
+          </div>
         </div>
       </div>
     </div>

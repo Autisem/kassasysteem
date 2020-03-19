@@ -38,6 +38,7 @@ body {
 -===========================-*/
 .backimage {
 	background: url("https://s2.dmcdn.net/v/RdnY_1TofmnpBbcjX/x1080");
+	background-size: cover;
 	position: absolute;
 	height: 70vh;
 	width: 100%;
@@ -127,6 +128,10 @@ body {
 /*  -=========================-
     TRAILERS AND TICKETS
 -===========================-*/
+.info-movie {
+	background-color: black;
+}
+
 .trailers-photos {
 	color: black;
 	padding: 20px 0;
@@ -159,7 +164,7 @@ h4 {
 }
 .trailers-photos h4,
 .trailers-photos h5 {
-	color: black;
+	color: white;
 }
 
 /*  -=========================-
@@ -265,7 +270,6 @@ h4 {
 	background: #ffc426;
 }
 .go-to-next-stage input {
-	margin-top: 12vh;
 	padding: 10px;
 	width: 100%;
 	border: none;
@@ -619,29 +623,7 @@ form input[type=submit] {
 .spacing {
     padding: 4px;
 }
-.plane {
-    margin: 20px auto;
-    max-width: 600px;
-    margin-bottom: 45vh;
-}
-.plane h1 {
-    width: 60%;
-    margin: 100px auto 35px auto;
-}
-ol {
-    list-style :none;
-    padding: 0;
-    margin: 0;
-}
-.seats {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-}
 .seat {
-    display: flex;
-    flex: 0 0 14.28571428571429%;
     padding: 5px;
     position: relative;
     height: 60px;
