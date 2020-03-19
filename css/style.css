@@ -38,6 +38,7 @@ body {
 -===========================-*/
 .backimage {
 	background: url("https://s2.dmcdn.net/v/RdnY_1TofmnpBbcjX/x1080");
+	background-size: cover;
 	position: absolute;
 	height: 70vh;
 	width: 100%;
@@ -127,6 +128,10 @@ body {
 /*  -=========================-
     TRAILERS AND TICKETS
 -===========================-*/
+.info-movie {
+	background-color: black;
+}
+
 .trailers-photos {
 	color: black;
 	padding: 20px 0;
@@ -159,7 +164,7 @@ h4 {
 }
 .trailers-photos h4,
 .trailers-photos h5 {
-	color: black;
+	color: white;
 }
 
 /*  -=========================-

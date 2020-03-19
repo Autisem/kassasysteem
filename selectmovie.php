@@ -5,7 +5,7 @@
     <table class="table table-dark table-hover">
         <thead>
             <tr>
-                <th class="h1">Movies</th>
+                <th class="h1">Film</th>
             </tr>
         </thead>
         <tbody>
