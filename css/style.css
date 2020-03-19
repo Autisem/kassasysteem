@@ -619,29 +619,7 @@ form input[type=submit] {
 .spacing {
     padding: 4px;
 }
-.plane {
-    margin: 20px auto;
-    max-width: 600px;
-    margin-bottom: 45vh;
-}
-.plane h1 {
-    width: 60%;
-    margin: 100px auto 35px auto;
-}
-ol {
-    list-style :none;
-    padding: 0;
-    margin: 0;
-}
-.seats {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-}
 .seat {
-    display: flex;
-    flex: 0 0 14.28571428571429%;
     padding: 5px;
     position: relative;
     height: 60px;
