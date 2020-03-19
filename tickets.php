@@ -100,6 +100,6 @@
     </div>
 </main>
 
-<footer>
+<footer class="footer">
 
     <?php require('footer.php'); ?>
