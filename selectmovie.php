@@ -1,4 +1,6 @@
-<?php require('header.php'); ?>
+<?php require('header.php');
+require('php/dbconnect.php') ?>
+
 
 <div class="wrapper sectionspacing">
 
@@ -9,22 +11,17 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td><a href='selecttime.php?id=$id'>Sonic</a></td>
-            </tr>
-            <tr>
-                <td><a href='selecttime.php?id=$id'>No time to die</a></td>
-            </tr>
-            <tr>
-                <td><a href='selecttime.php?id=$id'>1917</a></td>
-            </tr>
-            <tr>
-                <td><a href='selecttime.php?id=$id'>Knives out</a></td>
-            </tr>
-            <tr>
-                <td><a href='selecttime.php?id=$id'>Parasite</a></td>
-            </tr>
-            <tr>
+          <?php
+          $quary = "SELECT * FROM films";
+          foreach($db->query($quary) as $row){
+          $id = $row['id'];
+          $name = $row['name'];
+          echo "
+          <tr>
+          <td><a href='selecttime.php?id=$id'>$name</a></td>
+          </tr>";
+          }
+          ?>
         </tbody>
     </table>
 
