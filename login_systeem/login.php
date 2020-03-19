@@ -46,5 +46,5 @@ if ( ! empty( $_POST ) ) {
 
 echo $_SESSION['email-input'];
 
-header("Location: ../index.php");
+header("Location: ../index.php?status=loggedin");
  ?>

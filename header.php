@@ -40,6 +40,19 @@
         <a href="loginpage.php">Login</a>
         <p>or</p>
         <a href="registerpage.php">Register</a>
+        <?php
+          // $status = $_GET['status'];
+          // switch ($status) {
+          //   case $status == "loggedin":
+          //        require 'login_systeem/config.php';
+          //        echo '<a href="#"> user logged in </a>';
+          //     break;
+          //
+          //   default:
+          //     echo '<a href="loginpage.php">Login</a>';
+          //     break;
+          // }
+        ?>
         <input type="text" name="zoek" placeholder="Zoek">
       </form>
     </div>
