@@ -128,6 +128,5 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL) && filter_var($emailh, FILTER_VALI
 
       header("Location: ../login.html");
     }
-=======
   <?php require('footer.php'); ?>
->>>>>>> bac2133bcb9d699d225957ee118f44142d256503
+
