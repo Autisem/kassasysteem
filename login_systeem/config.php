@@ -1,9 +1,9 @@
 <?php
-$dbHost = '127.0.0.1';
+$dbHost = 'localhost';
 $dbName = 'bioscoop';
 $dbUser = 'root';
 $dbPass = '';
 
 $db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPass);
-$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION)
+$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
  ?>
