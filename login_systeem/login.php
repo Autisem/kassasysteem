@@ -27,6 +27,9 @@ $prepare->execute([
 ]);
 $item = $prepare->fetch(PDO::FETCH_ASSOC);
 
+$_SESSION['fName'] = $items['voornaam'];
+$_SESSION['lName'] = $items['achternaam'];
+
 if ( ! empty( $_POST ) ) {
     if ( isset( $_POST['username'] ) && isset( $_POST['password'] ) ) {
         // Getting submitted user data from database
@@ -46,5 +49,5 @@ if ( ! empty( $_POST ) ) {
 
 echo $_SESSION['email-input'];
 
-header("Location: ../index.php?status=loggedin");
+header("Location: ../index.php");
  ?>

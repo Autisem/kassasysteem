@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!doctype html>
 <html class="no-js" lang="EN">
 
@@ -37,21 +38,17 @@
         <a href="index.php#kids">Kids</a>
       </nav>
       <form action="" method="POST">
-        <a href="loginpage.php">Login</a>
-        <p>or</p>
-        <a href="registerpage.php">Register</a>
         <?php
-          // $status = $_GET['status'];
-          // switch ($status) {
-          //   case $status == "loggedin":
-          //        require 'login_systeem/config.php';
-          //        echo '<a href="#"> user logged in </a>';
-          //     break;
-          //
-          //   default:
-          //     echo '<a href="loginpage.php">Login</a>';
-          //     break;
-          // }
+          if ( isset( $_SESSION['fName'] ) && isset( $_SESSION['lName'] ) ) {
+            echo '<a href="#">Welkom ' . $_SESSION['lName'] . ", " . $_SESSION['fName'] . '</a>';
+            unset($_SESSION['lName']);
+            unset($_SESSION['fName']);
+          }
+          else {
+            echo '<a href="loginpage.php">Login</a>';
+            echo '<p>or</p>';
+            echo '<a href="registerpage.php">Register</a>';
+          }
         ?>
         <input type="text" name="zoek" placeholder="Zoek">
       </form>
