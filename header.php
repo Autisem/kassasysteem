@@ -51,6 +51,7 @@
           }
         ?>
         <input type="text" name="zoek" placeholder="Zoek">
+        <a href="selectmovie.php"><i class="fas">&#xf271;</i></a>
       </form>
     </div>
   </header>
