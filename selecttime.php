@@ -24,7 +24,7 @@
                 <td><a href='inputid.php'>18:10 - 20:04</a></td>
             </tr>
             <tr>
-                <td><a href='inputid.php'>21:10 - 23:04</a></td>
+                <td><a href="inputid.php?time=<?= $date = date('Y-m-d H:i:s', mktime(21,10,0,3,20,2020)) ?>">21:10 - 23:04</a></td>
             </tr>
         </tbody>
     </table>
