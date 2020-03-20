@@ -1,6 +1,7 @@
 <?php
 require ('config.php');
 require ('../php/sendmail.php');
+session_name("ingelogd");
 session_start();
 
 
