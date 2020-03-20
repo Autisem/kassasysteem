@@ -61,7 +61,7 @@
           }
           // niet ingelogd
           if (condition) {
-            // code...
+            // echo "U bent niet ingelogd klik " . ?> <a href="#">hier</a> <?php . " om in te loggen";
           }
            ?>
         </div>
