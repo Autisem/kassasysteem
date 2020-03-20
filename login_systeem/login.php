@@ -4,9 +4,6 @@ require ('../php/sendmail.php');
 session_start();
 
 
-
-MailTest();
-
 $email = $_POST['email-input'];
 $wachtwoord =$_POST['password-input'];
 $_SESSION['email-input'] = $email;
