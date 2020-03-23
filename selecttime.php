@@ -3,7 +3,8 @@
 <div class="wrapper sectionspacing">
 
     <a href="selectmovie.php" class="btn btn-warning">stap terug</a>
-
+    <?php  ?>
+    <form action="php/processOrder.php" method="post"></form>
     <table class="table table-dark table-hover">
         <thead>
             <tr>
@@ -11,21 +12,34 @@
             </tr>
         </thead>
         <tbody>
+        <form action="php\processsOrder.php" method="post">
+        <select name="time">
+        <option value="10:10 - 12:04">10:10 - 12:04</option>
+        <option value="12:10 - 14:04">12:10 - 14:04</option>
+        <option value="14:10 - 16:04">14:10 - 16:04</option>
+        <option value="18:10 - 20:04">18:10 - 20:04</option>
+        <option value="21:10 - 23:04">21:10 - 23:04</option>
+        <input type="hidden" name="id" value="<?= $_GET['id']?>">
+        <input type="submit">
+        </form>
+
+        </select>
             <tr>
-                <td><a href='inputid.php'>10:10 - 12:04</a></td>
+                <td></td>
             </tr>
             <tr>
-                <td><a href='inputid.php'>12:10 - 14:04</a></td>
+                <td></td>
             </tr>
             <tr>
-                <td><a href='inputid.php'>14:10 - 16:04</a></td>
+                <td></td>
             </tr>
             <tr>
-                <td><a href='inputid.php'>18:10 - 20:04</a></td>
+                <td></td>
             </tr>
             <tr>
-                <td><a href="inputid.php?time=<?= $date = date('Y-m-d H:i:s', mktime(21,10,0,3,20,2020)) ?>">21:10 - 23:04</a></td>
+                <td></td>
             </tr>
+
         </tbody>
     </table>
 

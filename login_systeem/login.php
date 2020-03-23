@@ -18,15 +18,16 @@ $prepare->execute([
 $items = $prepare->fetch(PDO::FETCH_ASSOC);
 
 $mail = $_POST['email-input'];
-$sql = "SELECT gegevens.email, gegevens.wachtwoord FROM gegevens WHERE email= :mailchek";
+$sql = "SELECT gegevens.email, gegevens.wachtwoord, gegevens.id, gegevens.voornaam, gegevens.achternaam FROM gegevens WHERE email= :mailchek";
 $prepare = $db->prepare($sql);
 $prepare->execute([
   ':mailchek' => $email
 ]);
 $item = $prepare->fetch(PDO::FETCH_ASSOC);
 
-$_SESSION['fName'] = $items['voornaam'];
-$_SESSION['lName'] = $items['achternaam'];
+$_SESSION['fName'] = $item['voornaam'];
+$_SESSION['lName'] = $item['achternaam'];
+$_SESSION['id'] = $item['id'];
 
 if ( ! empty( $_POST ) ) {
     if ( isset( $_POST['username'] ) && isset( $_POST['password'] ) ) {
