@@ -56,12 +56,12 @@
           <i class="fas fa-user"></i>
           <?php
           // ingelogd
-          if ($_SESSION['ingelogd']) {
+          if (isset ($_SESSION['ingelogd']) ) {
             echo "U bent ingelogd";
           }
           // niet ingelogd
-          if ($_SESSION['ingelogd']) {
-            echo "U bent niet ingelogd"
+          if (isset ($_SESSION['ingelogd']) ) {
+            echo "U bent niet ingelogd";
           }
            ?>
         </div>
