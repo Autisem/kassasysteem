@@ -221,7 +221,7 @@
             </div>
           </a>
         </div>
-        <div class="grid-item">
+        <div class="grid-item responsive-hidden">
           <a href="">
             <img src="https://media.pathe.nl/thumb/360x508/gfx_content/posterhr/Dolittle-Pathe-Posterv2.jpg" alt="movie">
             <div class="imgt">
@@ -272,7 +272,7 @@
             </div>
           </a>
         </div>
-        <div class="grid-item">
+        <div class="grid-item responsive-hidden">
           <a href="">
             <img src="https://media.pathe.nl/thumb/360x508/gfx_content/posterhr/Frozen-2-NL-_ps_1_jpg_sd-high_Copyright-2019-Disney-Enterprises-Inc-All-Rights-Reserved.jpg" alt="movie">
             <div class="imgt">
