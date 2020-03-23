@@ -556,8 +556,50 @@ td a {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-	/* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 1700px) {
+	.wrapper {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	.imgt {
+		font-size: 1.1em;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.wrapper {
+		width: 100%;
+	}
+
+	.subtitle {
+		margin-left: 5%;
+	}
+
+	.imgt {
+		font-size: 1em;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.sectiongrid {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 5%;
+	}
+
+	.responsive-hidden {
+		display: none;
+		visibility: hidden;
+	}
+
+	.subtitle {
+		text-align: center;
+	}
+
+	.imgt {
+		font-size: 1.2em;
+	}
 }
 
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
