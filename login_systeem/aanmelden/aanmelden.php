@@ -1,6 +1,8 @@
 <?php
 require ('../config.php');
 require ('../../php/sendmail.php');
+session_name("ingelogd");
+session_start();
 
 $voornaam = $_POST["voornaam-input"];
 $achternaam = $_POST["achternaam-input"];

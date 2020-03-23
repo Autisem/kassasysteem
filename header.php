@@ -56,14 +56,12 @@
           <i class="fas fa-user"></i>
           <?php
           // ingelogd
-          if (condition) {
-            // code...
+          if ($_SESSION['ingelogd']) {
+            echo "U bent ingelogd";
           }
           // niet ingelogd
-          if (condition) {
-            // echo "U bent niet ingelogd klik " . ?>
-             <!-- <a href="#">hier</a> -->
-              <?php //. " om in te loggen";
+          if ($_SESSION['ingelogd']) {
+            echo "U bent niet ingelogd"
           }
            ?>
         </div>
