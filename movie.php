@@ -21,42 +21,112 @@
         <p>Release: 13-02-2020<br><br>Sonic is the new live-action adventure based on the popular Sega video game franchise. Sonic and his new best friend Tom try the bad guy Dr. Stop Robotnik and save the world.</p>
       </div>
     </div>
-    <div class="times">
-      <h3>Today</h3>
-      <div class="time">
-        <a href="#">
-          <p>18:10 - 20:04</p>
-        </a>
-        <a href="#">
-          <div class="special-seat"><span>Special Seat</span></div>
-        </a>
+    <div class="time">
+      <?php echo '<h3>' . date("l j F")  . '</h3>'; ?>
+      <div class="location"><p><i class="fas fa-map-marker-alt"></i> Bioscoop AMO Breda</p></div>
+      <div class="time-container">
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
       </div>
-      <h3>Tommorow</h3>
-      <div class="time">
-        <a href="#">
-          <p>18:10 - 20:04</p>
-        </a>
-        <a href="#">
-          <div class="special-seat"><span>Special Seat</span></div>
-        </a>
+      <?php echo '<h3>' . date("l j F", strtotime(' +1 day')) . '<?h3>';?>
+      <div class="location"><p><i class="fas fa-map-marker-alt"></i> Bioscoop AMO Breda</p></div>
+      <div class="time-container">
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
       </div>
-      <h3>Sunday 20 Februari</h3>
-      <div class="time">
-        <a href="#">
-          <p>18:10 - 20:04</p>
-        </a>
-        <a href="#">
-          <div class="special-seat"><span>Special Seat</span></div>
-        </a>
+      <?php echo '<h3>' . date("l j F", strtotime(' +2 day')) . '<?h3>';?>
+      <div class="location"><p><i class="fas fa-map-marker-alt"></i> Bioscoop AMO Breda</p></div>
+      <div class="time-container">
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
       </div>
-      <h3>Monday 21 Februari</h3>
-      <div class="time">
-        <a href="#">
-          <p>18:10 - 20:04</p>
-        </a>
-        <a href="#">
-          <div class="special-seat"><span>Special Seat</span></div>
-        </a>
+      <?php echo '<h3>' . date("l j F", strtotime(' +3 day')) . '<?h3>';?>
+      <div class="location"><p><i class="fas fa-map-marker-alt"></i> Bioscoop AMO Breda</p></div>
+      <div class="time-container">
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+      </div>
+      <?php echo '<h3>' . date("l j F", strtotime(' +4 day')) . '<?h3>';?>
+      <div class="location"><p><i class="fas fa-map-marker-alt"></i> Bioscoop AMO Breda</p></div>
+      <div class="time-container">
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times invisible">
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
       </div>
     </div>
   </div>
