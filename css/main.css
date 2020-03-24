@@ -566,6 +566,14 @@ td a {
 	.imgt {
 		font-size: 1.1em;
 	}
+
+	header .wrapper {
+		flex-direction: column;
+	}
+
+	header form {
+		padding: 25px 0;
+	}
 }
 
 @media only screen and (max-width: 991px) {
@@ -599,6 +607,18 @@ td a {
 
 	.imgt {
 		font-size: 1.2em;
+	}
+
+	footer .wrapper {
+		flex-direction: column;
+	}
+
+	.footer {
+		height: 82.4px;
+	}
+
+	.links {
+		padding-top: 15px;
 	}
 }
 

@@ -1,16 +1,6 @@
 /*      -=========================-
     GLOBAL
 -===========================-*/
-* {
-	margin: 0;
-	padding: 0;
-}
-.wrapper {
-	margin: 0 auto;
-	width: 60%;
-	display: flex;
-	justify-content: center;
-}
 header a,
 footer a {
 	color: white;
@@ -528,7 +518,7 @@ body {
 	text-align: center;
 }
 
-input {
+main input {
 	width: 100%;
 	margin-bottom: 10px;
 	margin-right: 20px;
