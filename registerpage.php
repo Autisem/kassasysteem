@@ -63,10 +63,10 @@
 
 <footer class="footer">
 
-<<<<<<< HEAD
 <?php require('footer.php'); ?>
 
 <?php
+/*
 $voornaam = $_POST["voornaam-input"];
 $achternaam = $_POST["achternaam-input"];
 $geboortedatum = $_POST["geboortedatum-input"];
@@ -123,16 +123,21 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL) && filter_var($emailh, FILTER_VALI
           )
       ";
       $result = $db->prepare($sql);
-      $result->execute([':email' => $email,':telefoonnummer' => $telefoonnummer,':postcode' => $postcode,':huisnummer' => $huisnummer,':straatnaam' => $straatnaam,
-                        ':woonplaats' => $woonplaats,':geboortedatum' => $geboortedatum,':achternaam' => $achternaam,':voornaam' => $voornaam,':wachtwoord' => sha1($wachtwoord)]);
+      $result->execute([':email' => $email,
+                        ':telefoonnummer' => $telefoonnummer,
+                        ':postcode' => $postcode,
+                        ':huisnummer' => $huisnummer,
+                        ':straatnaam' => $straatnaam,
+                        ':woonplaats' => $woonplaats,
+                        ':geboortedatum' => $geboortedatum,
+                        ':achternaam' => $achternaam,
+                        ':voornaam' => $voornaam,
+                        ':wachtwoord' => sha1($wachtwoord)
+                        ]);
 
       header("Location: ../login.html");
     }
-<<<<<<< HEAD
-   require('footer.php'); 
-   ?>
-=======
   }
 }
-require('footer.php'); ?>
->>>>>>> 1e7f8523a295f3c6b6c128a936376cd10aad510a
+*/
+?>
