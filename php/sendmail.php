@@ -32,15 +32,15 @@ $mail = new PHPMailer(true);
         //Server settings
         $mail->SMTPDebug = SMTP::DEBUG_SERVER;                          // Enable verbose debug output
         $mail->isSMTP();                                                // Send using SMTP
-        $mail->Host       = 'smtp.ziggo.nl';                           // Set the SMTP server to send through
+        $mail->Host       = 'smtp.ziggo.nl';                            // Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                       // Enable SMTP authentication
-        $mail->Username   = 'curiotest@ziggo.nl';              // SMTP username
+        $mail->Username   = 'curiotest@ziggo.nl';                       // SMTP username
         $mail->Password   = '3XVuL4m:$TDvXn*';                          // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;             // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
-        $mail->Port       = 587;                                         // TCP port to connect to
+        $mail->Port       = 587;                                        // TCP port to connect to
 
         //Recipients
-        $mail->setFrom('daanisaanwezigdev@gmail.com', 'Bioscoop AMO');
+        $mail->setFrom('curiotest@ziggo.nl', 'Bioscoop AMO');
         $mail->addAddress($mailAdress, $userName);                      // Add a recipient
         //$mail->addAddress('ellen@example.com');                       // Name is optional
         //$mail->addReplyTo('info@example.com', 'Information');
