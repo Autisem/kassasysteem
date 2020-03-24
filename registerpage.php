@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="css/style.css">
 
 <main>
-  <div class="wrapper">
+  <div class="flexcent">
     <div class="wachtwoord">
       <h1 class="text-center">Registreren</h1>
       <p class="text-center" style="width: 360px; font-size: 1.1rem;"><strong>Maak hier een account aan om gebruik te maken van Bioscoop AMO.</strong><br>

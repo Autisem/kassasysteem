@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="css/style.css">
 
 <main>
-  <div class="wrapper">
+  <div class="flexcent">
     <div class="login">
       <h1>Login</h1>
       <form action="login_systeem/login.php" method="post">
