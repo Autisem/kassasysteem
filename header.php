@@ -52,19 +52,16 @@
         ?>
         <input type="text" name="zoek" placeholder="Zoek">
         <a href="selectmovie.php"><i class="fas">&#xf271;</i></a>
-        <div class="inlog-info">
-          <i class="fas fa-user"></i>
           <?php
           // ingelogd
-          if (isset ($_SESSION['ingelogd']) ) {
-            echo "U bent ingelogd";
+          if (isset ($_SESSION['ingelogd']) == true) {
+            echo "<p>U bent ingelogd</p>";
           }
           // niet ingelogd
-          if (isset ($_SESSION['ingelogd']) ) {
-            echo "U bent niet ingelogd";
+          if (isset ($_SESSION['ingelogd']) == false) {
+            echo "<p>U bent niet ingelogd</p>";
           }
            ?>
-        </div>
       </form>
     </div>
   </header>
