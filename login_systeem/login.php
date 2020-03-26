@@ -1,7 +1,9 @@
 <?php
 require ('config.php');
 require ('../php/sendmail.php');
-session_name("ingelogd");
+// session_name("ingelogd");
+// als je een session_name() gebruikt moet je deze oproepen voor elke session_start
+// is misschien beter om deze weg te laten
 session_start();
 
 
@@ -46,12 +48,7 @@ if ( ! empty( $_POST ) ) {
     	}
     }
 }
-if () {
-  ($_SESSION['ingelogd']) = true
-}
-else {
-  ($_SESSION['ingelogd']) = false
-}
+$_SESSION['ingelogd'] = true;
 
 echo $_SESSION['email-input'];
 

@@ -41,13 +41,15 @@
         <?php
           if ( isset( $_SESSION['fName'] ) && isset( $_SESSION['lName'] ) ) {
             echo '<a href="#">Welkom ' . $_SESSION['lName'] . ", " . $_SESSION['fName'] . '</a>';
-            unset($_SESSION['lName']);
-            unset($_SESSION['fName']);
+            // unset($_SESSION['lName']);
+            // unset($_SESSION['fName']);
+            // refresh page to unset
           }
           else {
             echo '<div class="flexcent">';
+            echo "<p>U bent niet ingelogd</p>";
             echo '<a href="loginpage.php">Login</a>';
-            echo '<p>or</p>';
+            echo '<p>of</p>';
             echo '<a href="registerpage.php">Register</a>';
             echo '</div>';
           }
@@ -57,11 +59,7 @@
           <?php
           // ingelogd
           if (isset ($_SESSION['ingelogd']) == true) {
-            echo "<p>U bent ingelogd</p>";
-          }
-          // niet ingelogd
-          if (isset ($_SESSION['ingelogd']) == false) {
-            echo "<p>U bent niet ingelogd</p>";
+            echo "<p><a href='logout.php'>Logout</a></p>";
           }
            ?>
       </form>
