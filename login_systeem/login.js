@@ -13,3 +13,6 @@ function ongeldig_email_of_wachtwoord() {
 function email_niet_geregistreerd() {
   alert('U hebt geen geregistreerd email adress ingevoerd');
 }
+function registarie_email_gestuurd() {
+  alert('Er is een registraie email naar u gestuurd');
+}

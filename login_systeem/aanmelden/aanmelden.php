@@ -28,7 +28,7 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
   echo "Er is een E-mail naar u verstuurd waarin u uw registratie kunt bevestigen";
 }
 else {
-  echo "U hebt geen geregistreerd account ingevoerd";
+  echo "Er is iets mid gegaan met uw registartie";
 }
 
 $voornaam = $_POST["voornaam-input"];
@@ -99,6 +99,7 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL) && filter_var($emailh, FILTER_VALI
                         ':wachtwoord' => sha1($wachtwoord)]
                       );
 
+      echo "string";
       header("Location: ../../loginpage.php");
     }
     else {
