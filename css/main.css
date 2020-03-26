@@ -609,6 +609,18 @@ td a {
 		font-size: 1.2em;
 	}
 
+	header form {
+		flex-direction: column;
+	}
+
+	header input {
+		margin: 15px 0;
+	}
+
+	header form > a {
+		margin-bottom: 15px;
+	}
+
 	footer .wrapper {
 		flex-direction: column;
 	}
@@ -619,6 +631,11 @@ td a {
 
 	.links {
 		padding-top: 15px;
+		width: 80%;
+	}
+
+	.social-media {
+		width: 80%;
 	}
 }
 

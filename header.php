@@ -45,9 +45,11 @@
             unset($_SESSION['fName']);
           }
           else {
+            echo '<div class="flexcent">';
             echo '<a href="loginpage.php">Login</a>';
             echo '<p>or</p>';
             echo '<a href="registerpage.php">Register</a>';
+            echo '</div>';
           }
         ?>
         <input type="text" name="zoek" placeholder="Zoek">
