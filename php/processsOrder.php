@@ -1,8 +1,13 @@
 <?php
 require 'dbconnect.php';
 session_start();
-    $query = "INSERT INTO reserveringen (owner, film, day_and_time) VALUES (:owner, :film, :date)";
+    $query = "INSERT INTO reserveringen (owner, showing) VALUES (:owner, :showing)";
+    $querySeat = "INSERT INTO seats (seatID, reservering) VALUES (:seatID, :reservering)";
     $statement = $db->prepare($query);
-    $statement->execute([':owner' => $_SESSION['id'], ':film'=>$_POST['id'], ':date' => $_POST['time']]);
+    $statementSeat = $db->prepare($querySeat);
+    var_dump($_SESSION);
+    $statement->execute([':owner' => $_SESSION['id'], ':showing'=>$_POST['id']]);
+    $last = $db->lastInsertId();
+    $statementSeat->execute([':seatID' =>$_POST['seat'], ':reservering' => $last]);
     header('Location: ../index.php');
 ?>

@@ -2,49 +2,14 @@
 
 require 'header.php';
 require 'php/dbconnect.php';
-echo '<form action="" method="post">Movie ID:<input type="text" name="name">
-      User ID:<input type="text" name="user">
-      Date: <input type="date" name="time">
-      Seat: <input type="number" name="seat">
-      <input type="submit">
-      </form>';
+$sql = "SELECT rooster.id, rooster.startTime, rooster.movie, films.id, films.name
+FROM rooster INNER JOIN films ON rooster.movie = films.id";
+$stmt = $db->query($sql);
+$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-if(isset($_POST['name'])){
-$datestro = strtotime($_POST['time']);
-$datetime = date('Y-m-d H:i:s', $datestro);
-$film = $_POST['name'];
-$owner = $_POST['user'];
-$seat = $_POST['seat'];
+var_dump($result);
 
-$sql = "SELECT id, name FROM films WHERE name = :name";
-$quary = $db->prepare($sql);
-$quary->execute([':name' => $film]);
-$item = $quary->fetch(PDO::FETCH_ASSOC);
+echo $result[0]['id'];
 
-$movieName = $item['id'];
-
-$orderSQL = "INSERT INTO reserveringen (owner, film, day_and_time,seat) VALUES (?, ?, ?, ?)";
-$orderSTMT = $db->prepare($orderSQL);
-$orderSTMT->execute([$owner,$movieName,$datetime, $sear]);
-
-
-echo "made order!";
-}
-$QuaryGetOrders = "SELECT reserveringen.id,  gegevens.voornaam, reserveringen.film, reserveringen.seat, films.name as movieName
-                  FROM reserveringen
-                  INNER JOIN gegevens ON reserveringen.owner = gegevens.id
-                  INNER JOIN films ON reserveringen.film = films.id";
-$prep = $db->query($QuaryGetOrders);
-$result = $prep->fetchAll(PDO::FETCH_ASSOC);
-echo '<table>';
-foreach($result as $item ){
-echo '<tr>'.
-'<td>'.  $item['id'].'|||</td>'.
-'<td>'.  $item['voornaam'].'|||</td>'.
-'<td>'.  $item['movieName'].'|||</td>'.
-'<td>'.  $item['seat'].'|||</td>'
-.'</tr>';
-}
-echo '</table>';
 require 'footer.php';
 ?>

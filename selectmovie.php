@@ -12,13 +12,16 @@ require('php/dbconnect.php') ?>
         </thead>
         <tbody>
           <?php
-          $quary = "SELECT * FROM films";
+          $quary = "SELECT rooster.id, rooster.startTime, rooster.movie, films.name
+          FROM rooster
+          INNER JOIN films ON rooster.movie = films.id";
           foreach($db->query($quary) as $row){
+          $startTime = $row['startTime'];
+          $movie = $row['name'];
           $id = $row['id'];
-          $name = $row['name'];
           echo "
           <tr>
-          <td><a href='selecttime.php?id=$id'>$name</a></td>
+          <td><a href='selecttime.php?id=$id'>$movie, starts at $startTime</a></td>
           </tr>";
           }
           ?>
