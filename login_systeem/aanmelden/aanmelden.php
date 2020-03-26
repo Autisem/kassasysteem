@@ -1,8 +1,35 @@
 <?php
 require ('../config.php');
 require ('../../php/sendmail.php');
+require "C:/xampp/htdocs/School/project/periode3/kassasysteem/vendor/autoload.php";
 session_name("ingelogd");
 session_start();
+
+if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+  SendMail($email, "het werkt", "registreren", "mailbody", "Deze email is niet succes vol ingeladen", $attachment);
+
+  //persoon naam kopelen aan emial $naamUser
+
+  // $sqlt = "SELECT * FROM loginkassasysteem WHERE email = :email";
+  // $queryt = $db->prepare($sqlt);
+  // $preparet->execute([
+  //   ':email' => $email
+  // ]);
+  //
+  // $itemt = $preparet->fetch(PDO::FETCH_ASSOC);
+  //
+  //
+  // $mailAdress = $email;
+  // $userName = $itemt['voornaam'];
+  // $subject = "Wachtwoord vergeten Bioscoop";
+  // $mailBody = "placeholder";
+  // $altMailBody = "de email kon niet geladen worden"
+
+  echo "Er is een E-mail naar u verstuurd waarin u uw registratie kunt bevestigen";
+}
+else {
+  echo "U hebt geen geregistreerd account ingevoerd";
+}
 
 $voornaam = $_POST["voornaam-input"];
 $achternaam = $_POST["achternaam-input"];
