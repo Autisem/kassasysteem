@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="css/style.css">
 
 <main>
-  <div class="wrapper">
+  <div class="flexcent">
     <div class="wachtwoord">
       <h1 class="text-center">Wachtwoord vergeten?</h1>
       <p>Wat jammer dat u u wachtwoord bent veregeten maar dat is geen probleem.<br> Als u hier onder u email adress invult dan sturen wij u een email waar via u u wachtwoord kunt veranderen</p>

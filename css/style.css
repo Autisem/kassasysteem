@@ -363,6 +363,7 @@ p.account-info {
 	align-items: flex-end;
 	padding: 10px;
 }
+div.email-input#email-input input,
 .login-wrapper input,
 .register-wrapper input {
 	border-radius: 10px;
@@ -391,6 +392,10 @@ p.account-info {
 }
 .wachtwoord form {
 	padding: 20px 0;
+}
+
+label[for=email]#email-input {
+	color: white;
 }
 
 /*  -=========================-
