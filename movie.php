@@ -8,7 +8,14 @@
       <div class="img-title">
         <img src="https://media.pathe.nl/thumb/180x254/gfx_content/posterhr/Sonic-OV-_ps_2_jpg_sd-high_Copyright-2019-Paramount-Pictures-and-Sega-of-America-Inc-All-Rights-Reserved.jpg" alt="">
         <h2>SONIC (ORIGINAL VERSION) <br>
-          <form action="tickets.php"><input type="submit" value="Tijden en Tickets"></form>
+          <?php
+            if ( isset( $_SESSION['fName'] ) && isset( $_SESSION['lName'] ) ) {
+              echo '<form action="tickets.php"><input type="submit" value="Tijden en Tickets"></form>';
+            }
+            else {
+              echo '<form action="loginpage.php"><input onclick="alertBoxFunction()" type="submit" value="Tijden en Tickets"></form>';
+            }
+          ?>
           </h1>
       </div>
     </div>
@@ -129,6 +136,224 @@
           </a>
         </div>
       </div>
+      <?php echo '<h3>' . date("l j F", strtotime(' +5 day')) . '<?h3>';?>
+      <div class="location"><p><i class="fas fa-map-marker-alt"></i> Bioscoop AMO Breda</p></div>
+      <div class="time-container">
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+      </div>
+      <?php echo '<h3>' . date("l j F", strtotime(' +6 day')) . '<?h3>';?>
+      <div class="location"><p><i class="fas fa-map-marker-alt"></i> Bioscoop AMO Breda</p></div>
+      <div class="time-container">
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+      </div>
+      <?php echo '<h3>' . date("l j F", strtotime(' +7 day')) . '<?h3>';?>
+      <div class="location"><p><i class="fas fa-map-marker-alt"></i> Bioscoop AMO Breda</p></div>
+      <div class="time-container">
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+      </div>
+      <?php echo '<h3>' . date("l j F", strtotime(' +8 day')) . '<?h3>';?>
+      <div class="location"><p><i class="fas fa-map-marker-alt"></i> Bioscoop AMO Breda</p></div>
+      <div class="time-container">
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times invisible">
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+      </div>
+      <?php echo '<h3>' . date("l j F", strtotime(' +9 day')) . '<?h3>';?>
+      <div class="location"><p><i class="fas fa-map-marker-alt"></i> Bioscoop AMO Breda</p></div>
+      <div class="time-container">
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+      </div>
+      <?php echo '<h3>' . date("l j F", strtotime(' +10 day')) . '<?h3>';?>
+      <div class="location"><p><i class="fas fa-map-marker-alt"></i> Bioscoop AMO Breda</p></div>
+      <div class="time-container">
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+      </div>
+      <?php echo '<h3>' . date("l j F", strtotime(' +11 day')) . '<?h3>';?>
+      <div class="location"><p><i class="fas fa-map-marker-alt"></i> Bioscoop AMO Breda</p></div>
+      <div class="time-container">
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+      </div>
+      <?php echo '<h3>' . date("l j F", strtotime(' +12 day')) . '<?h3>';?>
+      <div class="location"><p><i class="fas fa-map-marker-alt"></i> Bioscoop AMO Breda</p></div>
+      <div class="time-container">
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times invisible">
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+      </div>
+      <?php echo '<h3>' . date("l j F", strtotime(' +13 day')) . '<?h3>';?>
+      <div class="location"><p><i class="fas fa-map-marker-alt"></i> Bioscoop AMO Breda</p></div>
+      <div class="time-container">
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+      </div>
+      <?php echo '<h3>' . date("l j F", strtotime(' +14 day')) . '<?h3>';?>
+      <div class="location"><p><i class="fas fa-map-marker-alt"></i> Bioscoop AMO Breda</p></div>
+      <div class="time-container">
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="#">
+          <p><span><strong>12:00</strong></span> - 14:05</p>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
   <div class="info-movie">
@@ -170,6 +395,12 @@
     </div>
   </div>
 </main>
+<script>
+  function alertBoxFunction() {
+    alert("U moet een account hebben om uw kaarten te bestellen");
+    window.location.href = "loginpage.php";
+  }
+</script>
 
 <footer>
 

@@ -56,7 +56,7 @@
           <label for="wachtwoord-two-input" id="wachtwoord-two-input">Herhaaling Wachtwoord:</label>
           <input type="password" name="wachtwoord-two-input" id="wachtwoord-two-input">
         </div>
-        <input type="submit" name="submit" value="Aanmelden" class="btn btn-primary btn-block btn-large">
+        <input type="submit" name="submit" value="Aanmelden" class="btn btn-primary btn-block btn-large no-bottom">
       </form>
     </div>
 </main>

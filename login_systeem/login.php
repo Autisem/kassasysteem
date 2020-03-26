@@ -5,6 +5,7 @@ session_name("ingelogd");
 session_start();
 
 
+
 $email = $_POST['email-input'];
 $wachtwoord =$_POST['password-input'];
 $_SESSION['email-input'] = $email;
@@ -44,6 +45,12 @@ if ( ! empty( $_POST ) ) {
     		$_SESSION['user_id'] = $user->ID;
     	}
     }
+}
+if () {
+  ($_SESSION['ingelogd']) = true
+}
+else {
+  ($_SESSION['ingelogd']) = false
 }
 
 echo $_SESSION['email-input'];
