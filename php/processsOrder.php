@@ -1,5 +1,6 @@
 <?php
 require 'dbconnect.php';
+session_name("ingelogd");
 session_start();
     $query = "INSERT INTO reserveringen (owner, showing) VALUES (:owner, :showing)";
     $querySeat = "INSERT INTO seats (seatID, reservering) VALUES (:seatID, :reservering)";
