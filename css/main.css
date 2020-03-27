@@ -463,6 +463,11 @@ td a {
 	margin-bottom: 0;
 }
 
+.text-center {
+	width: 100%;
+	font-size: 1.1rem;
+}
+
 .hidden {
 	display: none !important;
 }
@@ -640,6 +645,15 @@ td a {
 
 	.social-media {
 		width: 80%;
+	}
+
+	form.register-wrapper {
+		align-items: center;
+	}
+
+	.responsive-flexX {
+		display: flex;
+		flex-direction: column;
 	}
 }
 

@@ -9,8 +9,8 @@
         <input type="text" name="email-input" placeholder="e-mail address" required="required" />
         <input type="password" name="password-input" placeholder="Password" required="required" />
         <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
+        <p class="account-info no-bottom">Have you forgotten your password, Don't worry just click <a href="wachtwoord_vergeten.php">here!</a> to find it</p>
       </form>
-      <p class="account-info">Have you forgotten your password, Don't worry just click <a href="wachtwoord_vergeten.php">here!</a> to find it</p>
     </div>
   </div>
 </main>
