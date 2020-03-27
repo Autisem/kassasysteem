@@ -209,7 +209,8 @@ h4 {
 	width: 100%;
 }
 .tickets {
-	width: 60%;
+	max-width: 770px;
+	width: 100%;
 }
 .order-confirmation {
 	width: 30%;
@@ -296,7 +297,7 @@ h4 {
 	box-shadow: 0px 2px 10px 0px rgba(94, 94, 94, 0.75);
 }
 .order-movie-info .img {
-	margin: 0 auto;
+	max-width: 260px;
 }
 .order-movie-info h5,
 .order-movie-info h4 {
@@ -312,10 +313,7 @@ h4 {
 	margin: 16px 0;
 }
 .order-page img {
-	margin: 0 0;
 	float: left;
-	height: 30vh;
-	margin-bottom: 16vh;
 	margin-right: 2vw;
 	margin-top: 10px;
 }
@@ -323,12 +321,8 @@ h4 {
 /*  -=========================-
     CONFIRMATION PAGE
 -===========================-*/
-.order-page .order-movie-details {
-	height: 40vh;
-}
 .order-page {
 	font-size: 1.4rem;
-	height: 40vh;
 	position: relative;
 	margin-top: 1vh;
 }

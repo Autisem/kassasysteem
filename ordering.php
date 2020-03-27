@@ -27,7 +27,7 @@
                 <h3>YOUR ORDER</h3>
                 <div class="order-movie-info order-page">
                     <div class="img">
-                        <img src="https://media.pathe.nl/thumb/180x254/gfx_content/posterhr/Sonic-OV-_ps_2_jpg_sd-high_Copyright-2019-Paramount-Pictures-and-Sega-of-America-Inc-All-Rights-Reserved.jpg" alt="">
+                        <img class="img-responsive" src="https://media.pathe.nl/thumb/180x254/gfx_content/posterhr/Sonic-OV-_ps_2_jpg_sd-high_Copyright-2019-Paramount-Pictures-and-Sega-of-America-Inc-All-Rights-Reserved.jpg" alt="">
                     </div>
                     <div class="order-movie-details">
                         <h4>SONIC (ORIGINAL VERSON)</h4>
