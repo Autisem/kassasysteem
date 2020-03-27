@@ -29,8 +29,8 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
   // $mailBody = "placeholder";
   // $altMailBody = "de email kon niet geladen worden"
 
-  echo '<script type="../login.js">alert("om uw registratie te voltooien is er een bevestigingsmail naar u gestuurd");</script>';
-  header("Location: ../index.php");
+  // echo "er is een mail naar u geestuurd waar via u uw wachtwoord kan aanpassen klik". "<a href='../../index.php'>hier</a>". " hier om tereug te gaan naar de home pagina.";
+  header('Location: ../../index.php');
 }
 else {
   echo "U hebt geen geregistreerd email adress ingevoerd";

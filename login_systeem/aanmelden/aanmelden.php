@@ -99,7 +99,6 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL) && filter_var($emailh, FILTER_VALI
                         ':wachtwoord' => sha1($wachtwoord)]
                       );
 
-      echo "string";
       header("Location: ../../loginpage.php");
     }
     else {
