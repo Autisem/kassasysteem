@@ -29,7 +29,9 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
   // $mailBody = "placeholder";
   // $altMailBody = "de email kon niet geladen worden"
 
-  // echo "er is een mail naar u geestuurd waar via u uw wachtwoord kan aanpassen klik". "<a href='../../index.php'>hier</a>". " hier om tereug te gaan naar de home pagina.";
+  echo "<p>Er is een mail naar u geestuurd waar via u uw wachtwoord kan aanpassen.</p>";
+  sleep(3);
+  // time_sleep_until(microtime(true)+10.0));
   header('Location: ../../index.php');
 }
 else {
