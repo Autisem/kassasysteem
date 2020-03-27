@@ -10,7 +10,7 @@ $query = $db->query($sql);
 $items = $query->fetchAll(PDO::FETCH_ASSOC);
 
 if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-  SendMail($email, "het werkt", "Wachtwoord vergeten", "mailbody", "Deze email is niet succes vol ingeladen", $attachment);
+  echo 'SendMail($email, "het werkt", "Wachtwoord vergeten", "mailbody", "Deze email is niet succes vol ingeladen", $attachment);';
 
   //persoon naam kopelen aan emial $naamUser
 

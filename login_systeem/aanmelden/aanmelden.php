@@ -5,31 +5,7 @@ require "C:/xampp/htdocs/School/project/periode3/kassasysteem/vendor/autoload.ph
 session_name("ingelogd");
 session_start();
 
-if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-  SendMail($email, "het werkt", "registreren", "mailbody", "Deze email is niet succes vol ingeladen", $attachment);
 
-  //persoon naam kopelen aan emial $naamUser
-
-  // $sqlt = "SELECT * FROM loginkassasysteem WHERE email = :email";
-  // $queryt = $db->prepare($sqlt);
-  // $preparet->execute([
-  //   ':email' => $email
-  // ]);
-  //
-  // $itemt = $preparet->fetch(PDO::FETCH_ASSOC);
-  //
-  //
-  // $mailAdress = $email;
-  // $userName = $itemt['voornaam'];
-  // $subject = "Wachtwoord vergeten Bioscoop";
-  // $mailBody = "placeholder";
-  // $altMailBody = "de email kon niet geladen worden"
-
-  echo "Er is een E-mail naar u verstuurd waarin u uw registratie kunt bevestigen";
-}
-else {
-  echo "Er is iets mid gegaan met uw registartie";
-}
 
 $voornaam = $_POST["voornaam-input"];
 $achternaam = $_POST["achternaam-input"];
@@ -99,7 +75,34 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL) && filter_var($emailh, FILTER_VALI
                         ':wachtwoord' => sha1($wachtwoord)]
                       );
 
-      header("Location: ../../loginpage.php");
+      if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo 'SendMail($email, "het werkt", "registreren", "mailbody", "Deze email is niet succes vol ingeladen", $attachment);';
+
+        //persoon naam kopelen aan emial $naamUser
+
+        // $sqlt = "SELECT * FROM loginkassasysteem WHERE email = :email";
+        // $queryt = $db->prepare($sqlt);
+        // $preparet->execute([
+        //   ':email' => $email
+        // ]);
+        //
+        // $itemt = $preparet->fetch(PDO::FETCH_ASSOC);
+        //
+        //
+        // $mailAdress = $email;
+        // $userName = $itemt['voornaam'];
+        // $subject = "Wachtwoord vergeten Bioscoop";
+        // $mailBody = "placeholder";
+        // $altMailBody = "de email kon niet geladen worden"
+
+        echo "Er is een E-mail naar u verstuurd waarin u uw registratie kunt bevestigen";
+        sleep(3);
+        // time_sleep_until(microtime(true)+10.0));
+        header('Location: ../../loginpage.php');
+      }
+      else {
+        echo "Er is iets mid gegaan met uw registartie";
+      }
     }
     else {
       echo "Uw wachtwoord herhaaling kwam niet overeen";
