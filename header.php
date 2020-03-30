@@ -38,22 +38,28 @@
         <a href="index.php#kids">Kids</a>
       </nav>
       <form action="" method="POST">
-        <?php
-          if ( isset( $_SESSION['fName'] ) && isset( $_SESSION['lName'] ) ) {
-            echo '<a href="#">Welkom ' . $_SESSION['lName'] . ", " . $_SESSION['fName'] . '</a>';
-            // unset($_SESSION['lName']);
-            // unset($_SESSION['fName']);
-            // refresh page to unset
-          }
-          else {
-            echo '<div class="flexcent">';
-            echo "<p>U bent niet ingelogd</p>";
-            echo '<a href="loginpage.php">Login</a>';
-            echo '<p>of</p>';
-            echo '<a href="registerpage.php">Register</a>';
-            echo '</div>';
-          }
-        ?>
+        <div class="dropdown">
+            <?php
+              if ( isset( $_SESSION['fName'] ) && isset( $_SESSION['lName'] ) ) {
+                echo '<button class="dropdown-toggle" style="background:none;border:none;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">';
+                echo '<a href="#">Welkom ' . $_SESSION['lName'] . ", " . $_SESSION['fName'] . '</a>';
+                echo '</button>';
+                echo '<div class="dropdown-menu" style="background:rgb(32, 32, 32);border:none;" aria-labelledby="dropdownMenuButton">';
+                echo '<a class="dropdown-item" style="padding: 10px;" href="logout.php">Logout</a>';
+                echo '</div>';
+                // unset($_SESSION['lName']);
+                // unset($_SESSION['fName']);
+                // refresh page to unset
+              }
+              else {
+                echo '<div class="flexcent">';
+                echo '<a href="loginpage.php">Login</a>';
+                echo '<p>of</p>';
+                echo '<a href="registerpage.php">Register</a>';
+                echo '</div>';
+              }
+            ?>
+        </div>
         <input type="text" name="zoek" placeholder="Zoek">
         <a href="selectmovie.php"><i class="fas">&#xf271;</i></a>
           <?php
