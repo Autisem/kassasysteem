@@ -58,7 +58,7 @@
         <a href="selectmovie.php"><i class="fas">&#xf271;</i></a>
           <?php
           // ingelogd
-          if (!isset($_SESSION['ingelogd'])) {
+          if (!isset($_SESSION['fName'])) {
             echo "<p>U bent niet ingelogd</p>";
           }
           else {
