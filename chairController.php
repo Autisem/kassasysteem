@@ -1,4 +1,5 @@
 <?php
+session_start();
 require 'login_systeem/config.php';
 // IF NOTHIN SELECTED
 if ($_POST['seats'] == NULL) {
@@ -6,9 +7,10 @@ if ($_POST['seats'] == NULL) {
 }
 // INSTALL THE stoelen.sql, OTHERWISE IT WONT HAVE A DATABASE TO PULL AND GO TO
 // ID AND SEAT ? POSSIBLY MORE LATER
+$i = 1;
 foreach ($_POST['seats'] as $selected){
-    echo $selected . " ";
-
+    $_SESSION['selectedSeat[' . $i . ']'] = $selected;
+    $i++;
     //INSERT INTO DATABASE
     // $data = [
     //     'stoel' => $selected,
@@ -19,5 +21,5 @@ foreach ($_POST['seats'] as $selected){
     // $prep->execute($data);
 }
 // REDIRECT
- header("Location: ordering.php")
+  header("Location: ordering.php")
 ?>

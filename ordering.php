@@ -34,17 +34,32 @@
                         <h5>Bioscoop</h5>
                         <p>Bioscoop AMO</p>
                         <h5>Wanneer</h5>
-                        <p>Vrijdag 14 Feb, 18:10 tot 19:49</p>
+                        <p>Maandag 30 Maart, 05:11 tot 07:15</p>
                         <h5>Versie</h5>
                         <p>EN</p>
                         <h5>Stoelen</h5>
-                        <p>input</p>
+                        <?php
+                          echo "<p>";
+                          if (isset ($_SESSION['selectedSeat[1]'])) {
+                            for ($i=1; $i < 12; $i++) {
+                              if (isset ($_SESSION['selectedSeat[' . $i . ']'])) {
+                                echo $_SESSION['selectedSeat[' . $i . ']'] . "  ";
+                              }
+                              elseif (!empty($_SESSION['selectedSeat[' . $i . ']']) ) {
+                                break;
+                              }
+                              unset($_SESSION['selectedSeat['. $i .']']);
+                            }
+                            echo "</p>";
+                          }
+                          else {
+                            echo "<p> no seat selected </p>";
+                          }
+                        ?>
                         <div class="tickets-total">
                             <h5><span>2x</span> Normaal</h5>
-                            <h5>totaal:</h5>
                         </div>
                         <div class="total">
-                            <h5>2 personen</h5>
                             <h5>totaal:</h5>
                         </div>
                     </div>
