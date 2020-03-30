@@ -10,7 +10,7 @@
         <h2>SONIC (ORIGINAL VERSION) <br>
           <?php
             if ( isset( $_SESSION['fName'] ) && isset( $_SESSION['lName'] ) ) {
-              echo '<form action="tickets.php"><input type="submit" value="Tijden en Tickets"></form>';
+              echo '<form action="#times-and-tickets  "><input type="submit" value="Tijden en Tickets"></form>';
             }
             else {
               echo '<form action="loginpage.php"><input onclick="alertBoxFunction()" type="submit" value="Tijden en Tickets"></form>';
@@ -29,12 +29,12 @@
         <p>De film volgt Sonic in zijn ontdekking van de wereld met zijn nieuwe menselijk vriend Tom Wachowski (James Marsden). Sonic en Tom moeten hun krachten bundelen om Dr. Robotnik (Jim Carrey) te stoppen. Deze gemene gekke wetenschapper wil Sonic zijn superpowers stelen om zo de hele wereld te domineren.</p>
       </div>
     </div>
-    <div class="time">
+    <div class="time" id="times-and-tickets">
       <?php echo '<h3>' . date("l j F")  . '</h3>'; ?>
       <div class="location"><p><i class="fas fa-map-marker-alt"></i> Bioscoop AMO Breda</p></div>
       <div class="time-container">
         <div class="times">
-          <a href="#">
+          <a href="tickets.php">
           <p><span><strong>12:00</strong></span> - 14:05</p>
           <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
           </a>

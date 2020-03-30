@@ -57,7 +57,7 @@
                                 // MAKE THE TD WITH THE CLASS SEAT AND ECHO THE INPUT WITH OR WTHOUT CHECK
                                 echo "<td class='seat'>";
                                 echo "<input type='checkbox' name='seats[]' value='" . $seatNumber . "' id='" . $seatNumber . "'";
-                                echo "checked />";
+                                echo "disabled readonly />";
                                 // SETS THE LABEL WITH THE CORRECT SEAT
                                 echo "<label for=" . $seatNumber . ">" . $seatNumber . "</label>";
                                 echo "</td>";
