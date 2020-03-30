@@ -54,7 +54,7 @@
               else {
                 echo '<div class="flexcent">';
                 echo '<a href="loginpage.php">Login</a>';
-                echo '<p>of</p>';
+                echo '<p>or</p>';
                 echo '<a href="registerpage.php">Register</a>';
                 echo '</div>';
               }
