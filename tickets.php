@@ -1,11 +1,20 @@
-<?php require('header.php'); ?>
+<?php
+    require('header.php');
+    require('php/dbconnect.php');
+    $sql    = "SELECT startTime from rooster WHERE movie = 2"; // select column , * = all , from what table?, | -- string
+    $query  = $db->query($sql); // db == database, -> prompt, save to query
+    $tijden  = $query->fetchall(PDO::FETCH_ASSOC); // fetch (ASSOCIATIVE ARRAY) data
+?>
 <link rel="stylesheet" href="css/style.css">
 
 <main>
     <div class="background-top-title"></div>
     <div class="wrapper no-flex">
         <div class="title flex">
-            <h1>Sonic (ORIGINAL VERSION)<br>Friday 14 februari 2020, 18:10 AMO zaal 1</h1>
+          <?php
+          $_SESSION['startTime'] = "<h1> Sonic (ORIGINAL VERSION)<br>" . date('l j F Y h:i:s',strtotime($tijden[0]['startTime'])) . " AMO Zaal 1 </h1>";
+          echo $_SESSION['startTime'];
+          ?>
             <a class="go-back" href="movie.php">Go Back</a>
         </div>
         <div class="order">
@@ -38,28 +47,21 @@
                             <td>NORMAl</td>
                             <td>€9,95</td>
                             <td>
-                                <form action=""><input type="number" placeholder="0" min="0" max="10"></form>
+                                <form action=""><input type="number" name="normal" placeholder="0" min="0" max="10"></form>
                             </td>
                         </tr>
                         <tr>
-                            <td>NORMAl</td>
+                            <td>KIND</td>
                             <td>€9,95</td>
                             <td>
-                                <form action=""><input type="number" placeholder="0" min="0" max="10"></form>
+                                <form action=""><input type="number" name="child" placeholder="0" min="0" max="10"></form>
                             </td>
                         </tr>
                         <tr>
-                            <td>CHILD</td>
-                            <td>€9,95</td>
+                            <td>OUDER DAN 64</td>
+                            <td>€7,95</td>
                             <td>
-                                <form action=""><input type="number" placeholder="0" min="0" max="10"></form>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>CHILD</td>
-                            <td>€9,95</td>
-                            <td>
-                                <form action=""><input type="number" placeholder="0" min="0" max="10"></form>
+                                <form action=""><input type="number" name="elder" placeholder="0" min="0" max="10"></form>
                             </td>
                         </tr>
                     </tbody>

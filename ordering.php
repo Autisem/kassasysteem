@@ -1,11 +1,19 @@
-<?php require('header.php'); ?>
+<?php
+    require('header.php');
+    require('php/dbconnect.php');
+    $sql    = "SELECT startTime from rooster WHERE movie = 2"; // select column , * = all , from what table?, | -- string
+    $query  = $db->query($sql); // db == database, -> prompt, save to query
+    $tijden  = $query->fetchall(PDO::FETCH_ASSOC); // fetch (ASSOCIATIVE ARRAY) data
+?>
 <link rel="stylesheet" href="css/style.css">
 
 <main>
     <div class="background-top-title"></div>
     <div class="wrapper no-flex">
         <div class="title flex">
-            <h1>Sonic (ORIGINAL VERSION)<br>Friday 14 februari 2020, 18:10 AMO zaal 1</h1>
+          <?php
+          echo $_SESSION['startTime'];
+          ?>
             <a class="go-back" href="movie.php">Go Back</a>
         </div>
         <div class="order">
@@ -34,7 +42,9 @@
                         <h5>Bioscoop</h5>
                         <p>Bioscoop AMO</p>
                         <h5>Wanneer</h5>
-                        <p>Maandag 30 Maart, 05:11 tot 07:15</p>
+                        <?php
+                        echo "<p>" . date('l j F h:i',strtotime($tijden[0]['startTime'])) . " tot 07:10 </p>";
+                        ?>
                         <h5>Versie</h5>
                         <p>EN</p>
                         <h5>Stoelen</h5>

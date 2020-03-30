@@ -1,4 +1,10 @@
-<?php require('header.php'); ?>
+<?php
+    require('header.php');
+    require('php/dbconnect.php');
+    $sql    = "SELECT startTime from rooster WHERE movie = 2"; // select column , * = all , from what table?, | -- string
+    $query  = $db->query($sql); // db == database, -> prompt, save to query
+    $tijden  = $query->fetchall(PDO::FETCH_ASSOC); // fetch (ASSOCIATIVE ARRAY) data
+?>
 <link rel="stylesheet" href="css/style.css">
 
 <main>
@@ -40,13 +46,13 @@
           </a>
         </div>
         <div class="times">
-          <a href="#">
+          <a href="tickets.php">
           <p><span><strong>12:00</strong></span> - 14:05</p>
           <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
           </a>
         </div>
         <div class="times">
-          <a href="#">
+          <a href="tickets.php">
           <p><span><strong>12:00</strong></span> - 14:05</p>
           <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
           </a>
@@ -56,25 +62,27 @@
       <div class="location"><p><i class="fas fa-map-marker-alt"></i> Bioscoop AMO Breda</p></div>
       <div class="time-container">
         <div class="times">
-          <a href="#">
+          <a href="tickets.php">
+            <?php
+            echo "<p><span><strong>" . date('h:i',strtotime($tijden[0]['startTime'])) . "</strong></span> - 07:15</p>";
+            ?>
+          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
+          </a>
+        </div>
+        <div class="times">
+          <a href="tickets.php">
           <p><span><strong>12:00</strong></span> - 14:05</p>
           <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
           </a>
         </div>
         <div class="times">
-          <a href="#">
+          <a href="tickets.php">
           <p><span><strong>12:00</strong></span> - 14:05</p>
           <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
           </a>
         </div>
         <div class="times">
-          <a href="#">
-          <p><span><strong>12:00</strong></span> - 14:05</p>
-          <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
-          </a>
-        </div>
-        <div class="times">
-          <a href="#">
+          <a href="tickets.php">
           <p><span><strong>12:00</strong></span> - 14:05</p>
           <div class="yellow"><a href="#"><p><strong>SPECIAL SEAT</strong></p></a></div>
           </a>

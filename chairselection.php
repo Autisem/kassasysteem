@@ -11,7 +11,9 @@
     <div class="background-top-title"></div>
     <div class="wrapper no-flex">
         <div class="title flex">
-            <h1>Sonic (ORIGINAL VERSION)<br>Friday 14 februari 2020, 18:10 AMO zaal 1</h1>
+            <?php
+            echo $_SESSION['startTime'];
+            ?>
             <a class="go-back" href="movie.php">Go Back</a>
         </div>
         <div class="progress">
