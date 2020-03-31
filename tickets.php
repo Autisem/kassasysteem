@@ -34,44 +34,46 @@
                     </a>
                 </div>
                 <p>You can order up to a max of 12 tickets.</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <td>TYPE</td>
-                            <td>PRICE</td>
-                            <td>AMOUNT</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>NORMAl</td>
-                            <td>€9,95</td>
-                            <td>
-                                <form action=""><input type="number" name="normal" placeholder="0" min="0" max="10"></form>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>KIND</td>
-                            <td>€9,95</td>
-                            <td>
-                                <form action=""><input type="number" name="child" placeholder="0" min="0" max="10"></form>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>OUDER DAN 64</td>
-                            <td>€7,95</td>
-                            <td>
-                                <form action=""><input type="number" name="elder" placeholder="0" min="0" max="10"></form>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <form action="chairController.php" method="POST">
+                  <table>
+                      <thead>
+                          <tr>
+                              <td>TYPE</td>
+                              <td>PRICE</td>
+                              <td>AMOUNT</td>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>NORMAl</td>
+                              <td>€8,00</td>
+                              <td>
+                                  <input type="number" name="adult" placeholder="0" min="0" max="12">
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>KIND</td>
+                              <td>€6,95</td>
+                              <td>
+                                  <input type="number" name="child" placeholder="0" min="0" max="12">
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>OUDER DAN 64</td>
+                              <td>€7,00</td>
+                              <td>
+                                  <input type="number" name="elder" placeholder="0" min="0" max="12">
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
                 <div class="voucher">
                     <h3>Voucher</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, sit odio vel beatae asperiores</p>
-                    <form action=""><input type="text" placeholder="code"><input type="submit" class="submit" value="add"></form>
+                    <input type="text" placeholder="code"><input type="submit" class="submit" value="add">
                 </div>
-                <form class="go-to-next-stage" action="chairselection.php"><input type="submit" value="STEP 2: CHOOSE YOUR CHAIRS"></form>
+                <input name="type" class="go-to-next-stage" type="submit" style="background:#FFC426" value="STEP 2: CHOOSE YOUR CHAIRS">
+                </form>
             </div>
             <div class="order-confirmation">
                 <h3>YOUR ORDER</h3>

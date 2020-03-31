@@ -63,14 +63,44 @@
                             echo "</p>";
                           }
                           else {
-                            echo "<p> no seat selected </p>";
+                            echo "<p>geen plaats geselecteerd</p>";
                           }
                         ?>
                         <div class="tickets-total">
-                            <h5><span>2x</span> Normaal</h5>
+                          <?php
+                            echo "<h4>";
+                            if (isset ($_SESSION['adult'])) {
+                              echo "<p>volwassen </p>";
+                              echo "<span>" . $_SESSION['adult'] . "x €8,00";
+                              echo "<br>";
+                            }
+                            if (isset ($_SESSION['child'])) {
+                              echo "<p>kind </p>";
+                              echo "<span>" . $_SESSION['child'] . "x €6,95";
+                              echo "<br>";
+                            }
+                            if (isset ($_SESSION['elder'])) {
+                              echo "<p> ouder dan 64 </p>";
+                              echo "<span>" . $_SESSION['elder'] . "x €7,00";
+                              echo "<br>";
+                            }
+                            else {
+                              echo "<p>geen ticket gekozen </p>";
+                            }
+                            echo "</h4>";
+                          ?>
                         </div>
                         <div class="total">
-                            <h5>totaal:</h5>
+                            <?php
+                            if (isset ($_SESSION['adult']) || isset ($_SESSION['child']) || isset ($_SESSION['elder'])) {
+                              $total = $_SESSION['adult']*8 + $_SESSION['child']*6.95 + $_SESSION['elder']*7;
+                              echo "<p> totaal: €" . $total . "</p>";
+
+                              unset($_SESSION['adult']);
+                              unset($_SESSION['child']);
+                              unset($_SESSION['elder']);
+                            }
+                            ?>
                         </div>
                     </div>
                 </div>
