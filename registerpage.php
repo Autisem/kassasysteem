@@ -59,6 +59,11 @@
           <input type="password" name="wachtwoord-two-input" id="wachtwoord-two-input">
         </div>
         <input type="submit" name="submit" value="Aanmelden" class="btn btn-primary btn-block btn-large no-bottom">
+        <?php 
+        if (isset($_GET["msg"]) && $_GET["msg"] == 'exist') {
+          echo "<div class=\"alert btn-block alert-warning\">Account already exist!</div>";
+          }
+        ?>
       </form>
     </div>
 </main>

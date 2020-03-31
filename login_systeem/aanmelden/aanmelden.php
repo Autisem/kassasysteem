@@ -1,7 +1,7 @@
 <?php
 require ('../config.php');
 require ('../../php/sendmail.php');
-require "C:/xampp/htdocs/School/project/periode3/kassasysteem/vendor/autoload.php";
+require_once __DIR__.'../../../vendor/autoload.php';
 session_name("ingelogd");
 session_start();
 
@@ -26,17 +26,13 @@ $query->execute([':email' => $email,':wachtwoord' => sha1($wachtwoord)]);
 $items = $query->fetchAll(PDO::FETCH_ASSOC);
 
 if(!(empty($items))){
-  echo "The gebruiker is all regristeerd";
-  var_dump($items);
-  exit();
+  exit(header('Location: ../../registerpage.php?msg=exist'));
 }
 
 if (filter_var($email, FILTER_VALIDATE_EMAIL) && filter_var($emailh, FILTER_VALIDATE_EMAIL)) {
   if ($email == $emailh) {
     if ($wachtwoord == $wachtwoordh) {
-    $sql = "
-        INSERT INTO gegevens
-        (
+    $sql = "INSERT INTO gegevens(
             voornaam,
             achternaam,
             geboortedatum,
@@ -48,8 +44,7 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL) && filter_var($emailh, FILTER_VALI
             email,
             wachtwoord
         )
-        VALUES
-        (
+        VALUES (
           :voornaam,
           :achternaam,
           :geboortedatum,
@@ -60,8 +55,7 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL) && filter_var($emailh, FILTER_VALI
           :telefoonnummer,
           :email,
           :wachtwoord
-          )
-      ";
+          )";
       $result = $db->prepare($sql);
       $result->execute([':email' => $email,
                         ':telefoonnummer' => $telefoonnummer,
