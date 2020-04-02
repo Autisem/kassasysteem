@@ -70,16 +70,25 @@
                           <?php
                             echo "<h4>";
                             if (isset ($_SESSION['adult'])) {
+                              if ($_SESSION['adult'] == NULL){
+                                $_SESSION['adult'] = 0;
+                              }
                               echo "<p>volwassen </p>";
                               echo "<span>" . $_SESSION['adult'] . "x €8,00";
                               echo "<br>";
                             }
                             if (isset ($_SESSION['child'])) {
+                              if ($_SESSION['child'] == NULL){
+                                $_SESSION['child'] = 0;
+                              }
                               echo "<p>kind </p>";
                               echo "<span>" . $_SESSION['child'] . "x €6,95";
                               echo "<br>";
                             }
                             if (isset ($_SESSION['elder'])) {
+                              if ($_SESSION['elder'] == NULL){
+                                $_SESSION['elder'] = 0;
+                              }
                               echo "<p> ouder dan 64 </p>";
                               echo "<span>" . $_SESSION['elder'] . "x €7,00";
                               echo "<br>";
@@ -92,14 +101,46 @@
                         </div>
                         <div class="total">
                             <?php
-                            if (isset ($_SESSION['adult']) || isset ($_SESSION['child']) || isset ($_SESSION['elder'])) {
-                              $total = $_SESSION['adult']*8 + $_SESSION['child']*6.95 + $_SESSION['elder']*7;
-                              echo "<p> totaal: €" . $total . "</p>";
-
-                              unset($_SESSION['adult']);
-                              unset($_SESSION['child']);
-                              unset($_SESSION['elder']);
+                            $noTickets = isset($_SESSION['adult']);
+                            if ($noTickets == false){
+                              echo '<p><a href="tickets.php" style="color:white;">Selecteer tickets</a>';
+                              die();
                             }
+                            if (isset ($_SESSION['adult'])) {
+                              if ($_SESSION['adult'] == NULL){
+                                $totalA = 0;
+                              }
+                              else {
+                                $totalA = $_SESSION['adult']*8;
+                              }
+                            }
+                            if (isset ($_SESSION['child'])) {
+                              if ($_SESSION['child'] == NULL) {
+                                $totalC = 0;
+                              }
+                              else {
+                                $totalC = $_SESSION['child']*6.957;
+                              }
+                            }
+                            if (isset ($_SESSION['elder'])) {
+                              if ($_SESSION['elder'] == NULL){
+                                $totalE = 0;
+                              }
+                              else {
+                                $totalE = $_SESSION['elder']*7;
+                              }
+                            }
+                            if ($totalA == null && $totalC == NULL && $totalE == NULL){
+                              echo "Geen tickets geselecteerd";
+                            }
+                            else {
+                              $total = $totalA + $totalC + $totalE;
+                              echo "<p>totaal: " . $total . "€ </p>";
+                            }
+
+                            unset($_SESSION['adult']);
+                            unset($_SESSION['child']);
+                            unset($_SESSION['elder']);
                             ?>
                         </div>
                     </div>
