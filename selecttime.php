@@ -3,8 +3,8 @@
 <div class="wrapper sectionspacing">
 
     <a href="selectmovie.php" class="btn btn-warning">stap terug</a>
-      <form action="php/processOrder.php" method="post"></form>
-        <form action="php\processsOrder.php" method="post">
+
+      <form action="php\processsOrder.php" method="post">
         <input type="number" name="seat">Seat ID</input>
         <input type="hidden" name="id" value="<?= $_GET['id']?>">
         <input type="submit">
