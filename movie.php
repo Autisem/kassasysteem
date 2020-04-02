@@ -16,7 +16,7 @@
         <h2>SONIC (ORIGINAL VERSION) <br>
           <?php
             if ( isset( $_SESSION['fName'] ) && isset( $_SESSION['lName'] ) ) {
-              echo '<form action="tickets.php"><input type="submit" value="Tijden en Tickets"></form>';
+              echo '<form action="#times-and-tickets"><input type="submit" value="Tijden en Tickets"></form>';
             }
             else {
               echo '<form action="loginpage.php"><input onclick="alertBoxFunction()" type="submit" value="Tijden en Tickets"></form>';
