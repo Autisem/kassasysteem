@@ -102,6 +102,8 @@
                         <div class="total">
                             <?php
                             $noTickets = isset($_SESSION['adult']);
+                            $noTickets = isset($_SESSION['child']);
+                            $noTickets = isset($_SESSION['elder']);
                             if ($noTickets == false){
                               echo '<p><a href="tickets.php" style="color:white;">Selecteer tickets</a>';
                               die();
