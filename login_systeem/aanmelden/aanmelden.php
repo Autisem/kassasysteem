@@ -66,8 +66,8 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL) && filter_var($emailh, FILTER_VALI
                         ':geboortedatum' => $geboortedatum,
                         ':achternaam' => $achternaam,
                         ':voornaam' => $voornaam,
-                        ':wachtwoord' => sha1($wachtwoord)]
-                      );
+                        ':wachtwoord' => sha1($wachtwoord)
+                        ]);
 
       if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         echo 'SendMail($email, "het werkt", "registreren", "mailbody", "Deze email is niet succes vol ingeladen", $attachment);';

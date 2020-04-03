@@ -1,7 +1,11 @@
 <?php
 require ('../config.php');
 require ('../../php/sendmail.php');
-require_once __DIR__.'../../../vendor/autoload.php';
+require __DIR__.'../../../vendor/autoload.php';
+
+$passChangePageUrl = $_SERVER['HTTP_HOST'].str_replace('/login_systeem/wachtwoord_vergeten/wachtwoord_vergeten.php', '/verander_wachtwoordpage.php',$_SERVER['REQUEST_URI']);
+
+$logo = str_replace('\login_systeem\wachtwoord_vergeten', '/img/Logo_AMO.png',__DIR__);
 
 $email = $_POST["email"];
 
@@ -11,11 +15,13 @@ $query = $db->prepare($sql);
 $query->execute([':ph_email' => $email]);
 $items = $query->fetch(PDO::FETCH_ASSOC);
 
+$aTag = "<a href=http://"."$passChangePageUrl"."?hashID=".$items['wachtwoord'].">Click this link to change password</a>";
+
 // controleert de input text of het een email formaat is.
 if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
   // controleert de email of het wel in de database bestaat.
   if ($email == $items['email']) {
-    SendMail($email, $items['achternaam'], "Wachtwoord vergeten", "mailbody", "Deze email is niet succesvol ingeladen", $attachment);
+    SendMail($email, $items['achternaam'], "Wachtwoord vergeten", $aTag, "Deze email is niet succesvol ingeladen", $logo);
     exit(header('Location: ../../wachtwoord_vergeten.php?msg=exist'));
 
   } else {

@@ -47,7 +47,7 @@
           <input type="email" name="email-input" id="email-input">
         </div>
         <div class="email-two-input responsive-flexX" id="email-two-input">
-          <label for="email-two-input" id="email-two-input">Herhaaling Email:</label>
+          <label for="email-two-input" id="email-two-input">Herhaling Email:</label>
           <input type="email" name="email-two-input" id="email-two-input">
         </div>
         <div class="wachtwoord-input responsive-flexX" id="wachtwoord-input">
@@ -55,7 +55,7 @@
           <input type="password" name="wachtwoord-input" id="wachtwoord-input">
         </div>
         <div class="wachtwoord-two-input responsive-flexX" id="wachtwoord-two-input">
-          <label for="wachtwoord-two-input" id="wachtwoord-two-input">Herhaaling Wachtwoord:</label>
+          <label for="wachtwoord-two-input" id="wachtwoord-two-input">Herhaling Wachtwoord:</label>
           <input type="password" name="wachtwoord-two-input" id="wachtwoord-two-input">
         </div>
         <input type="submit" name="submit" value="Aanmelden" class="btn btn-primary btn-block btn-large no-bottom">
